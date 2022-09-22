@@ -5,81 +5,162 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Portfolio">
 	<meta name="author" content="Clayton Blough">
-	
-	<!--<link rel="icon" type="image/png" href="//dfbuddy.com/favicon.png">-->
 
 	<title>Clayton Blough Portfolio</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
 
-	<!-- Custom styles for this template -->
-	<!--<link href="//dfbuddy.com/vendor/css/main.css" rel="stylesheet">-->
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+		body {
+		  overflow-x: hidden;
+		  font-family: 'Roboto', sans-serif;
+		  font-size: 16px;
+		}
+
+		/* Toggle Styles */
+
+		#viewport {
+		  padding-left: 250px;
+		  -webkit-transition: all 0.5s ease;
+		  -moz-transition: all 0.5s ease;
+		  -o-transition: all 0.5s ease;
+		  transition: all 0.5s ease;
+		}
+
+		#content {
+		  width: 100%;
+		  position: relative;
+		  margin-right: 0;
+		}
+
+		/* Sidebar Styles */
+
+		#sidebar {
+		  z-index: 1000;
+		  position: fixed;
+		  left: 250px;
+		  width: 250px;
+		  height: 100%;
+		  margin-left: -250px;
+		  overflow-y: auto;
+		  background: #292929;
+		  -webkit-transition: all 0.5s ease;
+		  -moz-transition: all 0.5s ease;
+		  -o-transition: all 0.5s ease;
+		  transition: all 0.5s ease;
+		}
+
+		#sidebar header {
+		  background-color: #1a1a1a;
+		  font-size: 20px;
+		  line-height: 52px;
+		  text-align: center;
+		}
+
+		#sidebar header a {
+		  color: #fff;
+		  display: block;
+		  text-decoration: none;
+		}
+
+		#sidebar header a:hover {
+		  color: #fff;
+		}
+
+		#sidebar .nav{
+		  
+		}
+
+		#sidebar img
+		{
+			margin-top: 20px;
+			height: 125px;
+			width: 125px;
+			border-radius: 50%;
+			border: 5px solid #292929;
+		}
+
+
+		#sidebar .nav a{
+		  background: none;
+		  /*border-bottom: 1px solid #455A64;*/
+		  color: #CFD8DC;
+		  font-size: 14px;
+		  padding: 12px 24px;
+		}
+
+		#sidebar .nav a:hover{
+		  background: none;
+		  color: #ECEFF1;
+		}
+
+		#sidebar .nav a i{
+		  margin-right: 16px;
+		}
+	</style>
 </head>
 
-<body id="page-top">
-	<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav"></nav>-->
-	
-	<header class="bg-primary text-white bg">
-		<div  class="container text-center">
-			<br>
-			<h1 class="big-dfbuddy-text"><span style="color: #e99f10">DF</span><span style="color: #6b6e70">Buddy</span></h1>
-			<p class="lead" style="font-size: 1.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)">Home of the Dead Frontier Stat Boost Calculator.</p>			
-			<br>
-		</div>
-	</header>
+<body id="page-top" style="background-color: #474747">
+	<div id="viewport">
+	  <!-- Sidebar -->
+	  <div id="sidebar">
+	    <header>
+	    	<img src="https://pbs.twimg.com/profile_images/1553923005809508352/REOX5n61_400x400.jpg" alt="profile"> 
+	    	<a href="#">Clayton Blough</a>
+	          <i class="fa-brands fa-twitter"></i>
+	          <i class="fa-brands fa-linkedin-in"></i>
+	          <i class="fa-brands fa-twitter"></i>
+	          <i class="fa-brands fa-twitter"></i>
+	          <i class="fa-brands fa-twitter"></i>
+			<hr>
+	    </header>
 
-	<main>
-		<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
-	    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-	      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-	      <span class="fs-4">Socials</span>
-	    </a>
-	    <hr>
-	    <ul class="nav nav-pills flex-column mb-auto">
-	      <li class="nav-item">
-	        <a href="#" class="nav-link active" aria-current="page">
-	          <svg class="bi me-2" width="16" height="16"><use xlink:href="#deadfrontier2"></use></svg>
-	          Dead Frontier 2
+	    <ul class="nav">
+	      <li>
+	        <a href="#">
+	          <i class="zmdi zmdi-view-dashboard"></i> Dead Frontier 2
 	        </a>
 	      </li>
 	      <li>
-	        <a href="#" class="nav-link text-white">
-	          <svg class="bi me-2" width="16" height="16"><use xlink:href="#deadfrontier1"></use></svg>
-	          Dead Frontier 1
+	        <a href="#">
+	          <i class="zmdi zmdi-link"></i> Dead Frontier 1
 	        </a>
 	      </li>
 	      <li>
-	        <a href="#" class="nav-link text-white">
-	          <svg class="bi me-2" width="16" height="16"><use xlink:href="#marchoftheliving"></use></svg>
-	          March of the Living
+	        <a href="#">
+	          <i class="zmdi zmdi-widgets"></i> March of the Living
 	        </a>
 	      </li>
 	      <li>
-	        <a href="#" class="nav-link text-white">
-	          <svg class="bi me-2" width="16" height="16"><use xlink:href="#contact"></use></svg>
-	          Contact
+	        <a href="#">
+	          <i class="zmdi zmdi-calendar"></i> About
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#">
+	          <i class="zmdi zmdi-info-outline"></i> Contact
 	        </a>
 	      </li>
 	    </ul>
 	  </div>
-  	</main>
 
-	<!-- Footer -->
-	<footer class="py-5 bg-dark">
-		<div class="container">
-			<!--<p class="m-0 text-center text-white">Copyright &copy; DFBuddy <span id="copyright-year">2019</span></p>-->
-		</div>
-	</footer>
+	  <!-- Content -->
+	  <div id="content">
+	    <!--<nav class="navbar navbar-default">
+	    </nav>-->
+	    <div class="container-fluid">
+	      <!--<h1>content content content</h1>-->
+	      <p>
+	       <!-- Make sure to keep all page content within the 
+	        <code>#content</code>.-->
+	      </p>
+	    </div>
+	  </div>
+	</div>
 
-	<!--<script>
-		document.getElementById("copyright-year").innerText = new Date().getFullYear();
-	</script>-->
-
-	<!-- Bootstrap core JavaScript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	
-	<script src="//kit.fontawesome.com/dccc160fa7.js"></script>
+	<script src="https://kit.fontawesome.com/dccc160fa7.js" crossorigin="anonymous"></script>
 </body>
 </html>
