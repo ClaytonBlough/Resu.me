@@ -59,7 +59,7 @@
 		  font-size: 20px;
 		  line-height: 52px;
 		  text-align: center;
-		  padding-bottom:18px;
+		  padding-bottom:10px;
 		}
 
 		#sidebar header a {
@@ -69,7 +69,7 @@
 		}
 
 		#sidebar header a:hover {
-		  color: #fff;
+		  color: white;
 		}
 
 		#sidebar .nav{
@@ -87,13 +87,27 @@
 
 		#sidebar header i
 		{
-			color:white;
+			color:#9c9c9c;
 			width: 32px;
 			height: 32px;
 			border-radius: 50%;
 			background:#292929;
+			padding-top: 7px;
+			margin: 5px;
 		}
 
+		#sidebar header i:hover
+		{
+			color:white;
+		}
+
+		#sidebar header p
+		{
+			color:#cccccc;
+			font-size:14px;
+			font-style: italic;
+			margin-top:-25px;
+		}
 
 		#sidebar .nav a{
 		  background: none;
@@ -120,11 +134,13 @@
 	  <div id="sidebar">
 	    <header>
 	    	<img src="https://pbs.twimg.com/profile_images/1553923005809508352/REOX5n61_400x400.jpg" alt="profile"> 
-	    	<a href="#">Clayton Blough</a>
-	        <i class="fa fa-brands fa-linkedin"></i>
-	        <i class="fa fa-brands fa-twitter"></i>
-	        <i class="fa fa-solid fa-envelope"></i>
-	        <i class="fa fa-brands fa-youtube"></i>
+	    	<a c href="#">Clayton Blough</a>
+	    	<p>claytonblough@email.com</p>
+	    	<div style="display: flex; align-items: center; justify-content: center">
+	        	<a class="sociallink" href="https://www.linkedin.com/in/clayton-blough-16933a22b/" target="_blank"><i class="fa fa-brands fa-linkedin"></i></a>
+	        	<a class="sociallink" href="https://twitter.com/ClaytonWasTaken" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>
+	        	<a class="sociallink" href="https://www.youtube.com/channel/UCc2nbKaJiMBLxJ4jVyXKIaQ" target="_blank"><i class="fa fa-brands fa-youtube"></i></a>
+	    	</div>
 	    </header>
 
 	    <ul class="nav">
