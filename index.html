@@ -15,6 +15,10 @@
 	<style type="text/css">
 		@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
 
+		html {
+ 			scroll-behavior: smooth;
+		}
+
 		body {
 		  overflow-x: hidden;
 		  font-family: 'Roboto', sans-serif;
@@ -38,7 +42,6 @@
 		}
 
 		/* Sidebar Styles */
-
 		#sidebar {
 		  z-index: 1000;
 		  position: fixed;
@@ -130,6 +133,7 @@
 
 <body id="page-top" style="background-color: #474747">
 	<div id="viewport">
+
 	  <!-- Sidebar -->
 	  <div id="sidebar">
 	    <header>
@@ -145,46 +149,168 @@
 
 	    <ul class="nav">
 	      <li>
-	        <a href="#">
-	        	About
+	        <a href="#resume">
+	        	Resume
 	        </a>
 	      </li>
 	      <li>
-	        <a href="#">
+	        <a href="#deadfrontier2">
 	        	Dead Frontier 2
 	        </a>
 	      </li>
 	      <li>
-	        <a href="#">
+	        <a href="#deadfrontier1">
 	        	Dead Frontier 1
 	        </a>
 	      </li>
 	      <li>
-	        <a href="#">
+	        <a href="#marchoftheliving">
 	        	March of the Living
 	        </a>
 	      </li>
 	      <li>
-	        <a href="#">
+	        <a href="#contact">
 	        	Contact
 	        </a>
 	      </li>
 	    </ul>
 	  </div>
 
-	  <!-- Content -->
-	  <div id="content">
-	    <!--<nav class="navbar navbar-default">
-	    </nav>-->
-	    <div class="container-fluid">
-	      <!--<h1>content content content</h1>-->
-	      <p>
-	       <!-- Make sure to keep all page content within the 
-	        <code>#content</code>.-->
-	      </p>
-	    </div>
-	  </div>
-	</div>
+
+	<!-- Page Content -->
+	<div class="container">
+		<div class="row">
+			<div id="resume" style="background-color:grey">
+				<h1>About</h1>
+				<p>
+					<h3>Skills</h3>
+					<ul>
+				      <li>
+			      		Game Design
+				      </li>
+				      <li>
+				      	C#
+				      </li>
+				      <li>
+				      	JavaScript
+				      </li>
+				    </ul>
+				</p>
+				<p>
+					<h3>Software proficiency</h3>
+					<ul>
+				      <li>
+				      	Unity
+				      </li>
+				      <li>
+				      	Photoshop
+				      </li>
+				      <li>
+				      	Blender
+				      </li>
+				    </ul>
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col" style="width: 500px;">
+				<div id="deadfrontier2" style="background-color:white">
+					<h1>Dead Frontier 2</h1>
+					<p>
+						Dead Frontier 2 is a survival horror MMORPG.
+						<ul>
+					      <li>
+					      	<b>Game Design</b>
+					      </li>
+					      <li>
+					      	<b>Gameplay Programming</b>
+					      </li>
+	  				      <li>
+					      	<b>Shader Programming</b>
+					      </li>
+					      <li>
+					      	<b>Optimization</b>
+					      </li>
+					      <li>
+					      	<b>UI Design</b>
+					      </li>
+					      <li>
+					      	<b>3D Modelling</b>
+					      </li>
+					    </ul>
+
+					    <i>A detailed breakdown</i>
+					</p>
+				</div>
+			</div>
+
+			<div class="col" style="width: 500px;">
+				<div id="deadfrontier1" style="background-color:grey">
+					<h1>Dead Frontier 1</h1>
+					<p>
+						Dead Frontier 1 is a survival action MMORPG.
+						<ul>
+					      <li>
+					      	<b>Game Design</b>
+					      </li>
+					      <li>
+					      	<b>Gameplay Programming</b>
+					      </li>
+	  				      <li>
+					      	<b>Shader Programming</b>
+					      </li>
+					      <li>
+					      	<b>Optimization</b>
+					      </li>
+					      <li>
+					      	<b>2D Item Thumbnails</b>
+					      </li>
+					      <li>
+					      	<b>3D Modelling</b>
+					      </li>
+					    </ul>
+
+					    <i>A detailed breakdown</i>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col" style="width: 500px;">
+				<div id="marchoftheliving" style="background-color:white">
+					<h1>March of the Living</h1>
+					<p>
+						March of the Living is a stragedy game similar to FTL (Faster Than Light).
+						<ul>
+					      <li>
+					      	<b>Writing</b>
+					      </li>
+					      <li>
+					      	<b>Event Scripting</b>
+					      </li>
+					      <li>
+					      	<b>Encounter Design</b>
+					      </li>
+					    </ul>
+
+					    <i>A detailed breakdown</i>
+					</p>
+				</div>
+			</div>
+
+			<div class="col" style="width: 500px;">
+				<div id="contact" style="background-color:orange">
+					<h1>Contact</h1>
+					<p>
+					</p>
+				</div>
+			</div>
+		</div>
+</div>
+
+		
 
 	<script src="https://kit.fontawesome.com/dccc160fa7.js" crossorigin="anonymous"></script>
 </body>
