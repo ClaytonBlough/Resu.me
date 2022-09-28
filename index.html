@@ -2,316 +2,283 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Portfolio">
-	<meta name="author" content="Clayton Blough">
-
-	<title>Clayton Blough Portfolio</title>
-
-	<!-- Bootstrap core CSS -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/dccc160fa7.js" crossorigin="anonymous"></script>
-
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<meta content="Portfolio" name="description">
+	<meta content="Clayton Blough" name="author">
+	<title>Clayton Blough Portfolio</title><!-- Bootstrap core CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/dccc160fa7.js">
+	</script>
 	<style type="text/css">
-		@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+	       @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
 
-		html {
- 			scroll-behavior: smooth;
-		}
+	       html {
+	           scroll-behavior: smooth;
+	       }
 
-		body {
-		  overflow-x: hidden;
-		  font-family: 'Roboto', sans-serif;
-		  font-size: 16px;
-		}
+	       body {
+	         overflow-x: hidden;
+	         font-family: 'Roboto', sans-serif;
+	         font-size: 16px;
+	       }
 
-		/* Toggle Styles */
+	       /* Toggle Styles */
 
-		#viewport {
-		  padding-left: 250px;
-		  -webkit-transition: all 0.5s ease;
-		  -moz-transition: all 0.5s ease;
-		  -o-transition: all 0.5s ease;
-		  transition: all 0.5s ease;
-		}
+	       #viewport {
+	         padding-left: 250px;
+	         -webkit-transition: all 0.5s ease;
+	         -moz-transition: all 0.5s ease;
+	         -o-transition: all 0.5s ease;
+	         transition: all 0.5s ease;
+	       }
 
-		#content {
-		  width: 100%;
-		  position: relative;
-		  margin-right: 0;
-		}
+	       #content {
+	         width: 100%;
+	         position: relative;
+	         margin-right: 0;
+	       }
 
-		/* Sidebar Styles */
-		#sidebar {
-		  z-index: 1000;
-		  position: fixed;
-		  left: 250px;
-		  width: 250px;
-		  height: 100%;
-		  margin-left: -250px;
-		  overflow-y: auto;
-		  background: #292929;
-		  -webkit-transition: all 0.5s ease;
-		  -moz-transition: all 0.5s ease;
-		  -o-transition: all 0.5s ease;
-		  transition: all 0.5s ease;
-		}
+	       .row{
+	       	padding:15px;
+	       }
 
-		#sidebar header {
-		  background-color: #1a1a1a;
-		  font-size: 20px;
-		  line-height: 52px;
-		  text-align: center;
-		  padding-bottom:10px;
-		}
+	       .col div {
+	       	padding:20px;
+	       }
 
-		#sidebar header a {
-		  color: #fff;
-		  display: block;
-		  text-decoration: none;
-		}
 
-		#sidebar header a:hover {
-		  color: white;
-		}
+	       /* Sidebar Styles */
+	       #sidebar {
+	         z-index: 1000;
+	         position: fixed;
+	         left: 200px;
+	         width: 200px;
+	         height: 100%;
+	         margin-left: -200px;
+	         overflow-y: auto;
+	         background: #292929;
+	         -webkit-transition: all 0.5s ease;
+	         -moz-transition: all 0.5s ease;
+	         -o-transition: all 0.5s ease;
+	         transition: all 0.5s ease;
+	       }
 
-		#sidebar .nav{
-		  
-		}
+	       #sidebar header {
+	         background-color: #1a1a1a;
+	         font-size: 20px;
+	         line-height: 52px;
+	         text-align: center;
+	         padding-bottom:10px;
+	       }
 
-		#sidebar img
-		{
-			margin-top: 20px;
-			height: 125px;
-			width: 125px;
-			border-radius: 50%;
-			border: 5px solid #292929;
-		}
+	       #sidebar header a {
+	         color: #fff;
+	         display: block;
+	         text-decoration: none;
+	       }
 
-		#sidebar header i
-		{
-			color:#9c9c9c;
-			width: 32px;
-			height: 32px;
-			border-radius: 50%;
-			background:#292929;
-			padding-top: 7px;
-			margin: 5px;
-		}
+	       #sidebar header a:hover {
+	         color: white;
+	       }
 
-		#sidebar header i:hover
-		{
-			color:white;
-		}
+	       #sidebar .nav{
+	         font-size: 22px;
+	       }
 
-		#sidebar header p
-		{
-			color:#cccccc;
-			font-size:14px;
-			font-style: italic;
-			margin-top:-25px;
-		}
+	       #sidebar img
+	       {
+	           margin-top: 20px;
+	           height: 125px;
+	           width: 125px;
+	           border-radius: 50%;
+	           border: 5px solid #292929;
+	       }
 
-		#sidebar .nav a{
-		  background: none;
-		  /*border-bottom: 1px solid #455A64;*/
-		  color: #CFD8DC;
-		  font-size: 14px;
-		  padding: 12px 24px;
-		}
+	       #sidebar header i
+	       {
+	           color:#9c9c9c;
+	           width: 32px;
+	           height: 32px;
+	           border-radius: 50%;
+	           background:#292929;
+	           padding-top: 7px;
+	           margin: 5px;
+	       }
 
-		#sidebar .nav a:hover{
-		  background: none;
-		  color: #ECEFF1;
-		}
+	       #sidebar header i:hover
+	       {
+	           color:white;
+	       }
 
-		#sidebar .nav a i{
-		  margin-right: 16px;
-		}
+	       #sidebar header p
+	       {
+	           color:#cccccc;
+	           font-size:14px;
+	           font-style: italic;
+	           margin-top:-25px;
+	       }
+
+	       #sidebar .nav a{
+	         background: none;
+	         /*border-bottom: 1px solid #455A64;*/
+	         color: #CFD8DC;
+	         font-size: 14px;
+	         padding: 12px 24px;
+	       }
+
+	       #sidebar .nav a:hover{
+	         background: none;
+	         color: #ECEFF1;
+	       }
+
+	       #sidebar .nav a i{
+	         margin-right: 16px;
+	       }
 	</style>
 </head>
 
 <body id="page-top" style="background-color: #474747">
 	<div id="viewport">
-
-	  <!-- Sidebar -->
-	  <div id="sidebar">
-	    <header>
-	    	<img src="https://pbs.twimg.com/profile_images/1553923005809508352/REOX5n61_400x400.jpg" alt="profile"> 
-	    	<a c href="#">Clayton Blough</a>
-	    	<p>claytonblough@email.com</p>
-	    	<div style="display: flex; align-items: center; justify-content: center">
-	        	<a class="sociallink" href="https://www.linkedin.com/in/clayton-blough-16933a22b/" target="_blank"><i class="fa fa-brands fa-linkedin"></i></a>
-	        	<a class="sociallink" href="https://twitter.com/ClaytonWasTaken" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>
-	        	<a class="sociallink" href="https://www.youtube.com/channel/UCc2nbKaJiMBLxJ4jVyXKIaQ" target="_blank"><i class="fa fa-brands fa-youtube"></i></a>
-	    	</div>
-	    </header>
-
-	    <ul class="nav">
-	      <li>
-	        <a href="#resume">
-	        	Resume
-	        </a>
-	      </li>
-	      <li>
-	        <a href="#deadfrontier2">
-	        	Dead Frontier 2
-	        </a>
-	      </li>
-	      <li>
-	        <a href="#deadfrontier1">
-	        	Dead Frontier 1
-	        </a>
-	      </li>
-	      <li>
-	        <a href="#marchoftheliving">
-	        	March of the Living
-	        </a>
-	      </li>
-	      <li>
-	        <a href="#contact">
-	        	Contact
-	        </a>
-	      </li>
-	    </ul>
-	  </div>
-
-
-	<!-- Page Content -->
-	<div class="container">
-		<div class="row">
-			<div id="resume" style="background-color:grey">
-				<h1>About</h1>
-				<p>
-					<h3>Skills</h3>
-					<ul>
-				      <li>
-			      		Game Design
-				      </li>
-				      <li>
-				      	C#
-				      </li>
-				      <li>
-				      	JavaScript
-				      </li>
-				    </ul>
-				</p>
-				<p>
-					<h3>Software proficiency</h3>
-					<ul>
-				      <li>
-				      	Unity
-				      </li>
-				      <li>
-				      	Photoshop
-				      </li>
-				      <li>
-				      	Blender
-				      </li>
-				    </ul>
-				</p>
-			</div>
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<header>
+				<img alt="profile" src="https://pbs.twimg.com/profile_images/1553923005809508352/REOX5n61_400x400.jpg"> <a href="#">Clayton Blough</a>
+				<p>claytonblough@email.com</p>
+				<div style="display: flex; align-items: center; justify-content: center">
+					<a class="sociallink" href="https://www.linkedin.com/in/clayton-blough-16933a22b/" target="_blank"><i class="fa fa-brands fa-linkedin"></i></a> <a class="sociallink" href="https://twitter.com/ClaytonWasTaken" target="_blank"><i class="fa fa-brands fa-twitter"></i></a> <a class="sociallink" href="https://www.youtube.com/channel/UCc2nbKaJiMBLxJ4jVyXKIaQ" target="_blank"><i class="fa fa-brands fa-youtube"></i></a>
+				</div>
+			</header>
+			<ul class="nav">
+				<li>
+					<a href="#resume">Resume</a>
+				</li>
+				<li>
+					<a href="#deadfrontier2">Dead Frontier 2</a>
+				</li>
+				<li>
+					<a href="#deadfrontier1">Dead Frontier 1</a>
+				</li>
+				<li>
+					<a href="#marchoftheliving">March of the Living</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
 		</div>
 
-		<div class="row">
-			<div class="col" style="width: 500px;">
-				<div id="deadfrontier2" style="background-color:white">
-					<h1>Dead Frontier 2</h1>
-					<p>
-						Dead Frontier 2 is a survival horror MMORPG.
-						<ul>
-					      <li>
-					      	<b>Game Design</b>
-					      </li>
-					      <li>
-					      	<b>Gameplay Programming</b>
-					      </li>
-	  				      <li>
-					      	<b>Shader Programming</b>
-					      </li>
-					      <li>
-					      	<b>Optimization</b>
-					      </li>
-					      <li>
-					      	<b>UI Design</b>
-					      </li>
-					      <li>
-					      	<b>3D Modelling</b>
-					      </li>
-					    </ul>
+		<!-- Page Content -->
+		<div class="container">
 
-					    <i>A detailed breakdown</i>
-					</p>
+			<!-- RESUME BLOCK -->
+			<div class="row">
+				<div class="col">
+					<div id="about" style="background-color:grey">
+						<h1>About</h1>
+						<div class="row">
+							<!-- SKILL BLOCK -->
+							<div class="col">
+								<h3>Skills</h3>
+								<div class="row">
+									<div class="col">
+										<ul>
+											<li>Game Design</li>
+											<li>C#</li>
+											<li>JavaScript</li>
+										</ul>
+									</div>
+									<div class="col">
+										<ul>
+											<li>More Game Design</li>
+											<li>More C#</li>
+											<li>More JavaScript</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- SOFTWARE PROFICIENCY BLOCK -->
+							<div class="col">
+								<h3>Software proficiency</h3>
+								<div class="row">
+									<div class="col">
+										<ul>
+											<li>Unity</li>
+											<li>Photoshop</li>
+											<li>Blender</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
-			<div class="col" style="width: 500px;">
-				<div id="deadfrontier1" style="background-color:grey">
-					<h1>Dead Frontier 1</h1>
-					<p>
-						Dead Frontier 1 is a survival action MMORPG.
+			<!-- DEAD FRONTIER TWO BLOCK -->
+			<div class="row">
+				<div class="col">
+					<div id="deadfrontier2" style="background-color:grey">
+						<h1>Dead Frontier 2</h1>
+						<p>Dead Frontier 2 is a survival horror MMORPG.</p>
 						<ul>
-					      <li>
-					      	<b>Game Design</b>
-					      </li>
-					      <li>
-					      	<b>Gameplay Programming</b>
-					      </li>
-	  				      <li>
-					      	<b>Shader Programming</b>
-					      </li>
-					      <li>
-					      	<b>Optimization</b>
-					      </li>
-					      <li>
-					      	<b>2D Item Thumbnails</b>
-					      </li>
-					      <li>
-					      	<b>3D Modelling</b>
-					      </li>
-					    </ul>
+							<li><b>Game Design</b></li>
+							<li><b>Gameplay Programming</b></li>
+							<li><b>Shader Programming</b></li>
+							<li><b>Optimization</b></li>
+							<li><b>UI Design</b></li>
+							<li><b>3D Modelling</b></li>
+						</ul><i>A detailed breakdown</i>
+						<p></p>
+					</div>
+				</div>
 
-					    <i>A detailed breakdown</i>
-					</p>
+				<!-- DEAD FRONTIER ONE BLOCK -->
+				<div class="col">
+					<div id="deadfrontier1" style="background-color:grey">
+						<h1>Dead Frontier 1</h1>
+						<p>Dead Frontier 1 is a survival action MMORPG.</p>
+						<ul>
+							<li><b>Game Design</b></li>
+							<li><b>Gameplay Programming</b></li>
+							<li><b>Shader Programming</b></li>
+							<li><b>Optimization</b></li>
+							<li><b>2D Item Thumbnails</b></li>
+							<li><b>3D Modelling</b></li>
+						</ul><i>A detailed breakdown</i>
+						<p></p>
+					</div>
+				</div>
+			</div>
+
+			<!-- MARCH OF THE LIVING BLOCK -->
+			<div class="row">
+				<div class="col">
+					<div id="marchoftheliving" style="background-color:grey">
+						<h1>March of the Living</h1>
+						<p>March of the Living is a stragedy game similar to FTL (Faster Than Light).</p>
+						<ul>
+							<li><b>Encounter Design</b></li>
+							<li><b>Event Scripting</b></li>
+						</ul><i>A detailed breakdown</i>
+						<p></p>
+					</div>
+				</div>
+			</div>
+
+			<!-- CONTACT BLOCK -->
+			<div class="row">
+				<div class="col">
+					<div id="contact" style="background-color:grey">
+						<h1>Contact</h1>
+						<p>Email</p>
+					</div>
 				</div>
 			</div>
 		</div>
+		<script src="https://kit.fontawesome.com/dccc160fa7.js">
+		</script> 
 
-		<div class="row">
-			<div class="col" style="width: 500px;">
-				<div id="marchoftheliving" style="background-color:white">
-					<h1>March of the Living</h1>
-					<p>
-						March of the Living is a stragedy game similar to FTL (Faster Than Light).
-						<ul>
-					      <li>
-					      	<b>Writing</b>
-					      </li>
-					      <li>
-					      	<b>Event Scripting</b>
-					      </li>
-					      <li>
-					      	<b>Encounter Design</b>
-					      </li>
-					    </ul>
-
-					    <i>A detailed breakdown</i>
-					</p>
-				</div>
-			</div>
-
-			<div class="col" style="width: 500px;">
-				<div id="contact" style="background-color:orange">
-					<h1>Contact</h1>
-					<p>
-					</p>
-				</div>
-			</div>
-		</div>
-</div>
-
-		
-
-	<script src="https://kit.fontawesome.com/dccc160fa7.js" crossorigin="anonymous"></script>
+		<!-- Footer -->
+	</div>
 </body>
 </html>
