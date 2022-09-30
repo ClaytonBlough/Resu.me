@@ -47,6 +47,7 @@
 	       .col div {
 	       	padding:20px;
 	       }
+
 	       ul {
 	       	list-style-type: square;
 	       }
@@ -54,7 +55,7 @@
 	       div h1
 	       {
 	       	color:#A7CCED;
-	       	padding-bottom:15px;
+	       	
 	       }
 
 	       div h5 {
@@ -90,7 +91,50 @@
 	       }
 
 	       .contentblock {
-	       	background-color:#292929;
+	       	color:#1a1a1a;
+	       	background-color:#1a1a1a;
+	       	background-repeat: no-repeat;
+	       	background-position:top center; 
+	       	background-size: cover; 
+	       	overflow:hidden;
+	       	text-shadow: 2px 2px black; box-shadow: 2px 2px 12px #000000;
+	       	background-size:110% 110%;
+	       }
+	       .contentblockbg {
+	       	background-color:#1a1a1a; 
+	       	color:#1a1a1a;
+	       }
+
+	       .btn {
+	       	color:#A7CCED;
+	       	border: none;
+	       }
+
+	       .btn:hover {
+	       	color:white;
+	       	border: none;
+	       }
+
+	        .btn:hover {
+	       	color:white;
+	       	border: none;
+	       }
+
+	       .greyscale {
+				-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+				filter: grayscale(100%);
+				transition: 0.5s;
+	       }
+
+   	       .greyscale:hover {
+				-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+				filter: grayscale(0%);
+				transition: 0.2s;
+	       }
+
+	       .noshadow {
+	       		text-shadow: none;
+	       		box-shadow: none;
 	       }
 
 
@@ -185,12 +229,12 @@
 	</style>
 </head>
 
-<body id="page-top" style="background-color: #474747">
+<body id="page-top" style="background-color: #121212">
 	<div id="viewport">
 		<!-- Sidebar -->
 		<div id="sidebar">
 			<header>
-				<img alt="profile" src="https://pbs.twimg.com/profile_images/1553923005809508352/REOX5n61_400x400.jpg"> <a href="#">Clayton Blough</a>
+				<img alt="" src="https://pbs.twimg.com/profile_images/1553923005809508352/REOX5n61_400x400.jpg"> <a href="#">Clayton Blough</a>
 				<p>claytonblough@email.com</p>
 				<div style="display: flex; align-items: center; justify-content: center">
 					<a class="sociallink" href="https://www.linkedin.com/in/clayton-blough-16933a22b/" target="_blank"><i class="fab fa-linkedin-in"></i></a> 
@@ -221,8 +265,8 @@
 
 			<!-- RESUME BLOCK -->
 			<div class="row">
-				<div class="col">
-					<div id="resume" class="contentblock">
+				<div class="col contentblock">
+					<div id="resume">
 						<h1>
 							<a href="#" target="_blank">
 								About
@@ -269,66 +313,214 @@
 				</div>
 			</div>
 
-			<!-- DEAD FRONTIER TWO BLOCK -->
+			<!-- DEAD FRONTIER TWO (2) BLOCK -->
 			<div class="row">
-				<div class="col">
-					<div id="deadfrontier2" class="contentblock">
-						<h1>
-							<a href="https://store.steampowered.com/app/744900/Dead_Frontier_2/" target="_blank">
-								Dead Frontier 2
-								<i class="fas fa-external-link-alt"></i>
-							</a> 
-						</h1>
-						<p>Dead Frontier 2 is a survival horror MMORPG.</p>
-						<ul>
-							<b><h5>Primary Roles</h5></b>
-							<li>Game Design</li>
-							<li>Gameplay Programming</li>
-							<br>
-							<b><h5>Secondary Roles</h5></b>
-							<li>Shader Programming</li>
-							<li>Memory Optimization</li>
-							<li>UI Design</li>
-							<li>3D Modelling / Texturing</li>
-						</ul>
-						<a class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2collapse" aria-expanded="false" aria-controls="deadfrontier2collapse">
-							Click to see more
-						</a>
-						<div class="collapse" id="deadfrontier2collapse">
-							<div class="card card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+				<div class="col contentblockbg">
+					<div class="row contentblock" style="background: url('http://dfbuddy.com/deadfrontier2_bg.png') no-repeat;">
+						<div class="col">
+							<div id="deadfrontier2">
+								<!--<h1>
+									<a href="https://deadfrontier.com/" target="_blank">
+										Dead Frontier 2
+										<i class="fas fa-external-link-alt"></i>
+									</a>
+								</h1>-->
+								<a href="https://store.steampowered.com/app/744900/Dead_Frontier_2/" target="_blank">
+									<img src="http://dfbuddy.com/deadfrontier2_title.png" class="d-block w-80" alt="Dead Frontier 2">
+										<i class="fas fa-external-link-alt" style="margin-top:-20px; width: 35%; float:right; color:grey"></i>
+									</img>
+								</a>
+								<hr style="color:white; width:70%">
+								<i>Dead Frontier 2 is a survival horror MMORPG.</i>
+								<br><br><br>
+								<ul>
+									<b><h5>Primary Roles</h5></b>
+									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2gamedesign" aria-expanded="false" aria-controls="deadfrontier2gamedesign">
+										■  Game Design
+									</li>
+									<br>
+									<div class="collapse noshadow" id="deadfrontier2gamedesign">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+										</p>
+									</div>
+									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2gameplayprogramming" aria-expanded="false" aria-controls="deadfrontier2gameplayprogramming">
+										■  Gameplay Programming
+									</li>
+									<div class="collapse noshadow" id="deadfrontier2gameplayprogramming">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+										</p>
+									</div>
+									<br><br>
+									<b><h5>Secondary Roles</h5></b>
+									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2shaderprogramming" aria-expanded="false" aria-controls="deadfrontier2shaderprogramming">
+										■  Shader Programming
+									</li>
+									<div class="collapse noshadow" id="deadfrontier2shaderprogramming">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+										</p>
+									</div>
+									<br>
+									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2optimization" aria-expanded="false" aria-controls="deadfrontier2optimization">
+										■  Memory Optimization
+									</li>
+									<div class="collapse noshadow" id="deadfrontier2optimization">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+										</p>
+									</div>
+									<br>
+									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2uidesign" aria-expanded="false" aria-controls="deadfrontier2uidesign">
+										■  UI Design
+									</li>
+									<div class="collapse noshadow" id="deadfrontier2uidesign">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+										</p>
+									</div>
+									<br>
+									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier23dmodeling" aria-expanded="false" aria-controls="deadfrontier23dmodeling">
+										■  3D Modelling / Texturing
+									</li>
+									<div class="collapse noshadow" id="deadfrontier23dmodeling">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+										</p>
+									</div>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col">
+							<div id="deadfrontier2carousel" class="carousel slide data-bs-ride="false">
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							      <img src="http://dfbuddy.com/marchoftheliving_credits.png" class="d-block w-100" alt="...">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="http://dfbuddy.com/marchoftheliving_banditevent.png" class="d-block w-100" alt="...">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="http://dfbuddy.com/marchoftheliving_banditeventresult.png" class="d-block w-100" alt="...">
+							    </div>
+							  </div>
+							  <button class="carousel-control-prev" type="button" data-bs-target="#deadfrontier2carousel" data-bs-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Previous</span>
+							  </button>
+							  <button class="carousel-control-next" type="button" data-bs-target="#deadfrontier2carousel" data-bs-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Next</span>
+							  </button>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>	
 
-				<!-- DEAD FRONTIER ONE BLOCK -->
-				<div class="col">
-					<div id="deadfrontier1" class="contentblock">
-						<h1>
-							<a href="https://deadfrontier.com/" target="_blank">
-								Dead Frontier 1
-								<i class="fas fa-external-link-alt"></i>
-							</a>
-						</h1>
-						<p>Dead Frontier 1 is a survival action MMORPG.</p>
-						<ul>
-							<b><h5>Primary Roles</h5></b>
-							<li>Game Design</li>
-							<li>Gameplay Programming</li>
-							<br>
-							<b><h5>Secondary Roles</h5></b>
-							<li>Shader Programming</li>
-							<li>System Optimization</li>
-							<li>2D Item Thumbnails</li>
-							<li>3D Modelling / Texturing</li>
-						</ul>
-						<a class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1collapse" aria-expanded="false" aria-controls="deadfrontier1collapse">
-							Click to see more
-						</a>
-						<div class="collapse" id="deadfrontier1collapse">
-							<div class="card card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+			<!-- DEAD FRONTIER ONE (1) BLOCK -->
+			<div class="row">
+				<div class="col contentblockbg">
+					<div class="row contentblock" style="background: url('http://dfbuddy.com/deadfrontier1_bg.png') no-repeat;">
+						<div class="col">
+							<div id="deadfrontier1">
+								<!--<h1>
+									<a href="https://deadfrontier.com/" target="_blank">
+										Dead Frontier 1
+										<i class="fas fa-external-link-alt"></i>
+									</a>
+								</h1>-->
+								<a href="https://deadfrontier.com/" target="_blank">
+									<img src="http://dfbuddy.com/deadfrontier1_title.png" class="d-block w-80" alt="Dead Frontier 1">
+										<i class="fas fa-external-link-alt" style="margin-top:-20px; width: 35%; float:right; color:grey"></i>
+									</img>
+								</a>
+								<hr style="color:white; width:70%">
+								<i>Dead Frontier 1 is a survival action MMORPG.</i>
+								<br><br><br>
+								<ul>
+									<b><h5>Primary Roles</h5></b>
+									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1gamedesign" aria-expanded="false" aria-controls="deadfrontier1gamedesign">
+										■  Game Design
+									</li>
+									<br>
+									<div class="collapse noshadow" id="deadfrontier1gamedesign">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+										</p>
+									</div>
+									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1gameplayprogramming" aria-expanded="false" aria-controls="deadfrontier1gameplayprogramming">
+										■  Gameplay Programming
+									</li>
+									<div class="collapse noshadow" id="deadfrontier1gameplayprogramming">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+										</p>
+									</div>
+									<br><br>
+									<b><h5>Secondary Roles</h5></b>
+									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1shaderprogramming" aria-expanded="false" aria-controls="deadfrontier1shaderprogramming">
+										■  Shader Programming
+									</li>
+									<div class="collapse noshadow" id="deadfrontier1shaderprogramming">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+										</p>
+									</div>
+									<br>
+									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1optimization" aria-expanded="false" aria-controls="deadfrontier1optimization">
+										■  System Optimization
+									</li>
+									<div class="collapse noshadow" id="deadfrontier1optimization">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+										</p>
+									</div>
+									<br>
+									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1uidesign" aria-expanded="false" aria-controls="deadfrontier1uidesign">
+										■  2D Item Thumbnails
+									</li>
+									<div class="collapse noshadow" id="deadfrontier1uidesign">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+										</p>
+									</div>
+									<br>
+									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier13dmodeling" aria-expanded="false" aria-controls="deadfrontier13dmodeling">
+										■  3D Modelling / Texturing
+									</li>
+									<div class="collapse noshadow" id="deadfrontier13dmodeling">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+										</p>
+									</div>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col">
+							<div id="deadfrontier1carousel" class="carousel slide data-bs-ride="false">
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							      <img src="http://dfbuddy.com/marchoftheliving_credits.png" class="d-block w-100" alt="...">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="http://dfbuddy.com/marchoftheliving_banditevent.png" class="d-block w-100" alt="...">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="http://dfbuddy.com/marchoftheliving_banditeventresult.png" class="d-block w-100" alt="...">
+							    </div>
+							  </div>
+							  <button class="carousel-control-prev" type="button" data-bs-target="#deadfrontier1carousel" data-bs-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Previous</span>
+							  </button>
+							  <button class="carousel-control-next" type="button" data-bs-target="#deadfrontier1carousel" data-bs-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Next</span>
+							  </button>
 							</div>
 						</div>
 					</div>
@@ -337,26 +529,68 @@
 
 			<!-- MARCH OF THE LIVING BLOCK -->
 			<div class="row">
-				<div class="col">
-					<div id="marchoftheliving" class="contentblock">
-						<h1>
-							<a href="https://store.steampowered.com/app/458000/March_of_the_Living/" target="_blank">
-								March of the Living
-								<i class="fas fa-external-link-alt"></i>
-							</a>
-						</h1>
-						<p>March of the Living is a stragedy game similar to FTL (Faster Than Light).</p>
-						<ul>
-							<b><h5>Primary Roles</h5></b>
-							<li>Encounter Design</li>
-							<li>Event Scripting</li>
-						</ul>
-						<a class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#marchofthelivingcollapse" aria-expanded="false" aria-controls="marchofthelivingcollapse">
-							Click to see more
-						</a>
-						<div class="collapse" id="marchofthelivingcollapse">
-							<div class="card card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+				<div class="col contentblockbg">
+					<div class="row contentblock" style="background: url('http://dfbuddy.com/marchoftheliving_bg.png') no-repeat;">
+						<div class="col">
+							<div id="marchoftheliving">
+								<!--<h1>
+									<a href="https://store.steampowered.com/app/458000/March_of_the_Living/" target="_blank">
+										March of the Living
+										<i class="fas fa-external-link-alt"></i>
+									</a>
+								</h1>-->
+								<a href="https://store.steampowered.com/app/458000/March_of_the_Living/" target="_blank">
+									<img src="http://dfbuddy.com/marchoftheliving_title.png" class="d-block w-80" alt="March of the Living">
+										<i class="fas fa-external-link-alt" style="margin-top:-20px; width: 35%; float:right; color:grey"></i>
+									</img>
+								</a>
+								<hr style="color:white; width:70%">
+								<i>March of the Living is a 2D tactical Rogue-like set in a zombie infested world. Manage and guide a group of survivors through random and scripted encounters to a rumored safe haven.</i>
+								<br><br><br>
+								<ul>
+									<b><h5>Primary Roles</h5></b>
+									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#marchofthelivingencounterdesign" aria-expanded="false" aria-controls="marchofthelivingencounterdesign">
+										■  Encounter Design
+									</li>
+									<br>
+									<div class="collapse noshadow" id="marchofthelivingencounterdesign">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+										</p>
+									</div>
+									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#marchofthelivingencounterwriting" aria-expanded="false" aria-controls="marchofthelivingencounterwriting">
+										■  Encounter Writing
+									</li>
+									<div class="collapse noshadow" id="marchofthelivingencounterwriting">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+										</p>
+									</div>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col">
+							<div id="marchofthelivingcarousel" class="carousel slide data-bs-ride="false">
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							      <img src="http://dfbuddy.com/marchoftheliving_credits.png" class="d-block w-100" alt="...">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="http://dfbuddy.com/marchoftheliving_banditevent.png" class="d-block w-100" alt="...">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="http://dfbuddy.com/marchoftheliving_banditeventresult.png" class="d-block w-100" alt="...">
+							    </div>
+							  </div>
+							  <button class="carousel-control-prev" type="button" data-bs-target="#marchofthelivingcarousel" data-bs-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Previous</span>
+							  </button>
+							  <button class="carousel-control-next" type="button" data-bs-target="#marchofthelivingcarousel" data-bs-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Next</span>
+							  </button>
 							</div>
 						</div>
 					</div>
@@ -365,8 +599,8 @@
 
 			<!-- CONTACT BLOCK -->
 			<div class="row">
-				<div class="col">
-					<div id="contact" class="contentblock">
+				<div class="col contentblock">
+					<div id="contact">
 						<h1>Contact</h1>
 						<p>Email</p>
 					</div>
@@ -375,8 +609,6 @@
 		</div>
 		<script src="https://kit.fontawesome.com/dccc160fa7.js"></script> 
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
-
 
 		<!-- Footer -->
 	</div>
