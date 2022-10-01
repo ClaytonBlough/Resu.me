@@ -94,7 +94,7 @@
 			bottom:3px;
 		}
 
-		.whitetext 
+		.white-text 
 		{
 			color:white;
 		}
@@ -113,22 +113,38 @@
 			border: none;
 		}
 
-		.contentblock 
+		.content-block 
 		{
 			color:#1a1a1a;
 			background-color:#1a1a1a;
+			background-image: linear-gradient(#292929, #292929, #292929, #1a1a1a);
 			background-repeat: no-repeat;
 			background-position:top center; 
 			background-size: cover; 
 			overflow:hidden;
 			text-shadow: 2px 2px black; 
 			box-shadow: 2px 2px 12px #000000;
+			min-height:500px;
 		}
 
-		.contentblockbg 
+		.content-block-bg 
 		{
 			background-color:#1a1a1a; 
 			color:#1a1a1a;
+		}
+
+		.content-title-hr
+		{
+			color:white; 
+			width:70%;
+		}
+
+		.content-title-link-icon
+		{
+			margin-top:-20px;
+			width: 35%;
+			float:right;
+			color:grey;
 		}
 
 		.btn 
@@ -169,19 +185,19 @@
 			box-shadow: 2px 2px 2px #000000;
 		}
 
-		.noshadow 
+		.no-shadow 
 		{
 			text-shadow: none;
 			box-shadow: none;
 		}
 
-		.softwareblock 
+		.software-block 
 		{
 			display:flex; 
 			flex-wrap: wrap;
 		}
 
-		.softwareicon 
+		.software-icon 
 		{
 			float:left; 
 			width:30px; 
@@ -190,7 +206,7 @@
 			filter: drop-shadow(2px 2px 2px #000000);
 		}
 
-		.softwarename 
+		.software-name 
 		{
 			margin-left:20px; 
 			margin-top:3px;
@@ -207,7 +223,7 @@
 			height: 100%;
 			margin-left: -200px;
 			overflow-y: auto;
-			background: #292929;
+			background: #1a1a1a;
 			-webkit-transition: all 0.5s ease;
 			-moz-transition: all 0.5s ease;
 			-o-transition: all 0.5s ease;
@@ -216,7 +232,7 @@
 
 		#sidebar header 
 		{
-			background-color: #1a1a1a;
+			background-color: #292929;
 			font-size: 20px;
 			line-height: 52px;
 			text-align: center;
@@ -293,6 +309,30 @@
 		{
 			margin-right: 16px;
 		}
+
+		@media only screen and (max-width: 600px) 
+		{
+			.content-block 
+			{
+				min-height:100%;
+			}
+
+			#viewport 
+			{
+				padding-left: 0;
+				padding:10px;
+			}
+
+			#sidebar 
+			{
+				display:none;
+				position: relative;
+				left: 0;
+				width: 0;
+				height: 0;
+				margin-left: 0;
+			}
+		}
 	</style>
 </head>
 
@@ -332,7 +372,7 @@
 
 			<!-- RESUME BLOCK -->
 			<div class="row">
-				<div class="col contentblock">
+				<div class="col content-block">
 					<div id="resume">
 						<h1>
 							<a href="#" target="_blank">
@@ -367,17 +407,17 @@
 								<h5>Software proficiency</h5>
 								<div class="row">
 									<div class="col">
-										<div class="softwareblock">
-											<img class="softwareicon" src="http://dfbuddy.com/icon_unity.png" class="d-block" alt="Unity"></img>
-											<p class="softwarename shadow">Unity</p>
+										<div class="software-block">
+											<img class="software-icon" src="http://dfbuddy.com/icon_unity.png" class="d-block" alt="Unity"></img>
+											<p class="software-name shadow">Unity</p>
 										</div>
-										<div class="softwareblock">
-											<img class="softwareicon" src="http://dfbuddy.com/icon_photoshop.png" class="d-block" alt="Photoshop"></img>
-											<p class="softwarename shadow">Photoshop</p>
+										<div class="software-block">
+											<img class="software-icon" src="http://dfbuddy.com/icon_photoshop.png" class="d-block" alt="Photoshop"></img>
+											<p class="software-name shadow">Photoshop</p>
 										</div>
-										<div class="softwareblock">
-											<img class="softwareicon" src="http://dfbuddy.com/icon_blender.png" class="d-block" alt="Blender"></img>
-											<p class="softwarename shadow">Blender</p>
+										<div class="software-block">
+											<img class="software-icon" src="http://dfbuddy.com/icon_blender.png" class="d-block" alt="Blender"></img>
+											<p class="software-name shadow">Blender</p>
 										</div>
 									</div>
 								</div>
@@ -389,9 +429,9 @@
 
 			<!-- DEAD FRONTIER TWO (2) BLOCK -->
 			<div class="row">
-				<div class="col contentblockbg">
-					<div class="row contentblocks" style="background: url('http://dfbuddy.com/deadfrontier2_bg.png') no-repeat;">
-						<div class="col">
+				<div class="col content-block-bg">
+					<div class="row content-blocks" style="background: url('http://dfbuddy.com/deadfrontier2_bg.png') no-repeat;">
+						<div class="col-sm">
 							<div id="deadfrontier2">
 								<!--<h1>
 									<a href="https://deadfrontier.com/" target="_blank">
@@ -401,10 +441,10 @@
 								</h1>-->
 								<a href="https://store.steampowered.com/app/744900/Dead_Frontier_2/" target="_blank">
 									<img src="http://dfbuddy.com/deadfrontier2_title.png" class="d-block w-80" alt="Dead Frontier 2">
-										<i class="fas fa-external-link-alt" style="margin-top:-20px; width: 35%; float:right; color:grey"></i>
+										<i class="fas fa-external-link-alt content-title-link-icon"></i>
 									</img>
 								</a>
-								<hr style="color:white; width:70%">
+								<hr class="content-title-hr">
 								<i>Dead Frontier 2 is a survival horror MMORPG.</i>
 								<br><br><br>
 								<ul>
@@ -422,47 +462,51 @@
 										■  Gameplay Programming
 									</li>
 									<br>
-									<div class="collapse noshadow" id="deadfrontier2gameplayprogramming">
+									<div class="collapse no-shadow" id="deadfrontier2gameplayprogramming">
 										<p>
 											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
 										</p>
 									</div>
 									<br><br>
 									<b><h5>Secondary Roles</h5></b>
+									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2developertools" aria-expanded="false" aria-controls="deadfrontier2developertools">
+										■  Developer Tools
+									</li>
+									<br>
+									<div class="collapse no-shadow" id="deadfrontier2developertools">
+										<p>
+											Created a tool that automatically processes in-game 3D assets and renders them out to 2D UI icons with transparent backgrounds.
+										</p>
+									</div>
 									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2shaderprogramming" aria-expanded="false" aria-controls="deadfrontier2shaderprogramming">
 										■  Shader Programming
 									</li>
 									<br>
-									<div class="collapse noshadow" id="deadfrontier2shaderprogramming">
+									<div class="collapse no-shadow" id="deadfrontier2shaderprogramming">
 										<p>
-											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-										</p>
-									</div>
-									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2optimization" aria-expanded="false" aria-controls="deadfrontier2optimization">
-										■  Memory Optimization
-									</li>
-									<br>
-									<div class="collapse noshadow" id="deadfrontier2optimization">
-										<p>
-											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+											Created a shader that enabled in-game assets to be dyed any color without detail loss, utilizing a highly efficient masking approach. This had the added benefit of a 35% reduction in texture memory usage with the player avatar.
 										</p>
 									</div>
 									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2uidesign" aria-expanded="false" aria-controls="deadfrontier2uidesign">
-										■  UI Design
+										■  UI Design / Programming
 									</li>
 									<br>
-									<div class="collapse noshadow" id="deadfrontier2uidesign">
+									<div class="collapse no-shadow" id="deadfrontier2uidesign">
 										<p>
-											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+											▪ Converted player inventory from a list to an interactive drag-and-drop system.
+											<br>
+											▪ Redesigned game menu UX and created new graphics / icons. 
 										</p>
 									</div>
 									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier23dmodeling" aria-expanded="false" aria-controls="deadfrontier23dmodeling">
 										■  3D Modelling / Texturing
 									</li>
 									<br>
-									<div class="collapse noshadow" id="deadfrontier23dmodeling">
+									<div class="collapse no-shadow" id="deadfrontier23dmodeling">
 										<p>
-											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+											▪ Created holiday themed player avatar weapons and cosmetics.
+											<br>
+											▪ Retexturing for enemies that added holiday-themed variations.
 										</p>
 									</div>
 									<br>
@@ -471,7 +515,7 @@
 						</div>
 
 						<div class="col">
-							<div id="deadfrontier2carousel" class="carousel slide data-bs-ride="false">
+							<!--<div id="deadfrontier2carousel" class="carousel slide data-bs-ride="false">
 							  <div class="carousel-inner">
 							    <div class="carousel-item active">
 							      <img src="http://dfbuddy.com/deadfrontier2_logo.png" class="d-block w-100" alt="...">
@@ -491,7 +535,7 @@
 							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 							    <span class="visually-hidden">Next</span>
 							  </button>
-							</div>
+							</div>-->
 						</div>
 					</div>
 				</div>
@@ -499,8 +543,8 @@
 
 			<!-- DEAD FRONTIER ONE (1) BLOCK -->
 			<div class="row">
-				<div class="col contentblockbg">
-					<div class="row contentblock" style="background: url('http://dfbuddy.com/deadfrontier1_bg.png') no-repeat;">
+				<div class="col content-block-bg">
+					<div class="row content-block" style="background: url('http://dfbuddy.com/deadfrontier1_bg.png') no-repeat;">
 						<div class="col">
 							<div id="deadfrontier1">
 								<!--<h1>
@@ -511,10 +555,10 @@
 								</h1>-->
 								<a href="https://deadfrontier.com/" target="_blank">
 									<img src="http://dfbuddy.com/deadfrontier1_title.png" class="d-block w-80" alt="Dead Frontier 1">
-										<i class="fas fa-external-link-alt" style="margin-top:-20px; width: 35%; float:right; color:grey"></i>
+										<i class="fas fa-external-link-alt content-title-link-icon"></i>
 									</img>
 								</a>
-								<hr style="color:white; width:70%">
+								<hr class="content-title-hr">
 								<i>Dead Frontier 1 is a survival action MMORPG.</i>
 								<br><br><br>
 								<ul>
@@ -523,18 +567,18 @@
 										■  Game Design
 									</li>
 									<br>
-									<div class="collapse noshadow" id="deadfrontier1gamedesign">
+									<div class="collapse no-shadow" id="deadfrontier1gamedesign">
 										<p>
-											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+											Designed multiple large-scale game expansions as well overhauled previous expansions. Weapons or armor sets that introduce unique behaviors (flamethrowers, crossbows, cyrogrenades, etc), enemies that have new mechanics or AI states, and environment-based mechanics inspired by area themes.
 										</p>
 									</div>
 									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1gameplayprogramming" aria-expanded="false" aria-controls="deadfrontier1gameplayprogramming">
 										■  Gameplay Programming
 									</li>
 									<br>
-									<div class="collapse noshadow" id="deadfrontier1gameplayprogramming">
+									<div class="collapse no-shadow" id="deadfrontier1gameplayprogramming">
 										<p>
-											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+											Programming for weapons, enemies, areas, and more.
 										</p>
 									</div>
 									<br><br>
@@ -543,36 +587,36 @@
 										■  Shader Programming
 									</li>
 									<br>
-									<div class="collapse noshadow" id="deadfrontier1shaderprogramming">
+									<div class="collapse no-shadow" id="deadfrontier1shaderprogramming">
 										<p>
-											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+											Created a shader that allowed a majority of in-game cosmetics to be dyed any color, using a layering approach that compiled player clothing into a single texture.
 										</p>
 									</div>
 									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1optimization" aria-expanded="false" aria-controls="deadfrontier1optimization">
 										■  System Optimization
 									</li>
 									<br>
-									<div class="collapse noshadow" id="deadfrontier1optimization">
+									<div class="collapse no-shadow" id="deadfrontier1optimization">
 										<p>
-											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+											Improved game performance and load times by over 50% by refactoring systems.
 										</p>
 									</div>
 									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1uidesign" aria-expanded="false" aria-controls="deadfrontier1uidesign">
 										■  2D Item Thumbnails
 									</li>
 									<br>
-									<div class="collapse noshadow" id="deadfrontier1uidesign">
+									<div class="collapse no-shadow" id="deadfrontier1uidesign">
 										<p>
-											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+											Created 100+ different item images ranging from weapons, armour sets, cosmetics, crafting components, and more for 2D male and female avatars.
 										</p>
 									</div>
 									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier13dmodeling" aria-expanded="false" aria-controls="deadfrontier13dmodeling">
 										■  3D Modelling / Texturing
 									</li>
 									<br>
-									<div class="collapse noshadow" id="deadfrontier13dmodeling">
+									<div class="collapse no-shadow" id="deadfrontier13dmodeling">
 										<p>
-											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+											Created and textured low-poly 3D models for 20+ assets ranging from weapons to environment props.
 										</p>
 									</div>
 									<br>
@@ -581,7 +625,7 @@
 						</div>
 
 						<div class="col">
-							<div id="deadfrontier1carousel" class="carousel slide data-bs-ride="false">
+							<!--<div id="deadfrontier1carousel" class="carousel slide data-bs-ride="false">
 							  <div class="carousel-inner">
 							    <div class="carousel-item active">
 							      <img src="http://dfbuddy.com/deadfrontier1_artportfolio.png" class="d-block w-100" alt="...">
@@ -601,7 +645,7 @@
 							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 							    <span class="visually-hidden">Next</span>
 							  </button>
-							</div>
+							</div>-->
 						</div>
 					</div>
 				</div>
@@ -609,8 +653,8 @@
 
 			<!-- MARCH OF THE LIVING BLOCK -->
 			<div class="row">
-				<div class="col contentblockbg">
-					<div class="row contentblock" style="background: url('http://dfbuddy.com/marchoftheliving_bg.png') no-repeat;">
+				<div class="col content-block-bg">
+					<div class="row content-block" style="background: url('http://dfbuddy.com/marchoftheliving_bg.png') no-repeat;">
 						<div class="col">
 							<div id="marchoftheliving">
 								<!--<h1>
@@ -621,10 +665,10 @@
 								</h1>-->
 								<a href="https://store.steampowered.com/app/458000/March_of_the_Living/" target="_blank">
 									<img src="http://dfbuddy.com/marchoftheliving_title.png" class="d-block w-80" alt="March of the Living">
-										<i class="fas fa-external-link-alt" style="margin-top:-20px; width: 35%; float:right; color:grey"></i>
+										<i class="fas fa-external-link-alt content-title-link-icon"></i>
 									</img>
 								</a>
-								<hr style="color:white; width:70%">
+								<hr class="content-title-hr">
 								<i>March of the Living is a 2D tactical Rogue-like set in a zombie infested world. Manage and guide a group of survivors through random and scripted encounters to a rumored safe haven.</i>
 								<br><br><br>
 								<ul>
@@ -633,18 +677,18 @@
 										■  Encounter Design
 									</li>
 									<br>
-									<div class="collapse noshadow" id="marchofthelivingencounterdesign">
+									<div class="collapse no-shadow" id="marchofthelivingencounterdesign">
 										<p>
-											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+											Designed random encounters with varying rewards or consequences influenced by the player's choices and character items.
 										</p>
 									</div>
 									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#marchofthelivingencounterwriting" aria-expanded="false" aria-controls="marchofthelivingencounterwriting">
 										■  Encounter Writing
 									</li>
 									<br>
-									<div class="collapse noshadow" id="marchofthelivingencounterwriting">
+									<div class="collapse no-shadow" id="marchofthelivingencounterwriting">
 										<p>
-											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+											Creative writing for 30 unique branching in-game scenarios.
 										</p>
 									</div>
 									<br>
@@ -653,7 +697,7 @@
 						</div>
 
 						<div class="col">
-							<div id="marchofthelivingcarousel" class="carousel slide data-bs-ride="false">
+							<!--<div id="marchofthelivingcarousel" class="carousel slide data-bs-ride="false">
 							  <div class="carousel-inner">
 							    <div class="carousel-item active">
 							      <img src="http://dfbuddy.com/marchoftheliving_credits.png" class="d-block w-100" alt="...">
@@ -673,7 +717,7 @@
 							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 							    <span class="visually-hidden">Next</span>
 							  </button>
-							</div>
+							</div>-->
 						</div>
 					</div>
 				</div>
@@ -681,7 +725,7 @@
 
 			<!-- CONTACT BLOCK -->
 			<div class="row">
-				<div class="col contentblock">
+				<div class="col content-block">
 					<div id="contact">
 						<h1>Contact</h1>
 						<p>Email</p>
