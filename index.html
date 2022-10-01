@@ -12,216 +12,287 @@
 	<script src="https://kit.fontawesome.com/dccc160fa7.js">
 	</script>
 	<style type="text/css">
-	       @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+		@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
 
-	       html {
-	           scroll-behavior: smooth;
-	       }
+		html 
+		{
+			scroll-behavior: smooth;
+		}
 
-	       body {
-	         overflow-x: hidden;
-	         font-family: 'Roboto', sans-serif;
-	         font-size: 16px;
-	       }
+		body 
+		{
+			overflow-x: hidden;
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+		}
 
-	       /* Toggle Styles */
+		/* Toggle Styles */
 
-	       #viewport {
-	         padding-left: 250px;
-	         -webkit-transition: all 0.5s ease;
-	         -moz-transition: all 0.5s ease;
-	         -o-transition: all 0.5s ease;
-	         transition: all 0.5s ease;
-	       }
+		#viewport 
+		{
+			padding-left: 250px;
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+		}
 
-	       #content {
-	         width: 100%;
-	         position: relative;
-	         margin-right: 0;
-	       }
+		#content 
+		{
+			width: 100%;
+			position: relative;
+			margin-right: 0;
+		}
 
-	       .row {
-	       	padding-top:15px;
-	       	padding-bottom:15px;
-	       }
+		.row 
+		{
+			padding-top:15px;
+			padding-bottom:15px;
+		}
 
-	       ul {
-	       	list-style-type: square;
-	       }
+		div h1
+		{
+			color:#A7CCED;
+		}
 
-	       div h1
-	       {
-	       	color:#A7CCED;
-	       	
-	       }
+		div h5 
+		{
+			color:white;
+		}
 
-	       div h5 {
-	       	color:white;
-	       }
-
-			div ul {
+		div ul 
+		{
 			color:#b0b0b0;
-			}
+		}
 
-			div p {
+		div p 
+		{
 			color:white;
-			}
+		}
 
-			div i {
+		div i 
+		{
 			color:white;
-			}
+		}
 
 
-	       h1 a {
-	       	color:#A7CCED;
-	       	text-decoration: none;
-	       }
+		h1 a 
+		{
+			color:#A7CCED;
+			text-decoration: none;
+		}
 
-   	       h1 a:hover {
-	       	color:white;
-	       }
+		h1 a:hover 
+		{
+			color:white;
+		}
 
-   	       h1 a i {
-	       	font-size:12px;
-	       	position:relative; 
-      	 bottom:3px;
-	       }
+		h1 a i 
+		{
+			font-size:12px;
+			position:relative; 
+			bottom:3px;
+		}
 
-	       .contentblock {
-	       	color:#1a1a1a;
-	       	background-color:#1a1a1a;
-	       	background-repeat: no-repeat;
-	       	background-position:top center; 
-	       	background-size: cover; 
-	       	overflow:hidden;
-	       	text-shadow: 2px 2px black; box-shadow: 2px 2px 12px #000000;
-	       }
-	       .contentblockbg {
-	       	background-color:#1a1a1a; 
-	       	color:#1a1a1a;
-	       }
+		.whitetext 
+		{
+			color:white;
+		}
 
-	       .btn {
-	       	color:#A7CCED;
-	       	border: none;
-	       }
+		.interactive 
+		{
+			color:#A7CCED;
+			text-decoration: none;
+			border: none;
+		}
 
-	       .btn:hover {
-	       	color:white;
-	       	border: none;
-	       }
+		.interactive:hover 
+		{
+			color:white;
+			text-decoration: none;
+			border: none;
+		}
 
-	        .btn:hover {
-	       	color:white;
-	       	border: none;
-	       }
+		.contentblock 
+		{
+			color:#1a1a1a;
+			background-color:#1a1a1a;
+			background-repeat: no-repeat;
+			background-position:top center; 
+			background-size: cover; 
+			overflow:hidden;
+			text-shadow: 2px 2px black; 
+			box-shadow: 2px 2px 12px #000000;
+		}
 
-	       .greyscale {
-				-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-				filter: grayscale(100%);
-				transition: 0.5s;
-	       }
+		.contentblockbg 
+		{
+			background-color:#1a1a1a; 
+			color:#1a1a1a;
+		}
 
-   	       .greyscale:hover {
-				-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-				filter: grayscale(0%);
-				transition: 0.2s;
-	       }
+		.btn 
+		{
+			color:#A7CCED;
+			border: none;
+		}
 
-	       .noshadow {
-	       		text-shadow: none;
-	       		box-shadow: none;
-	       }
+		.btn:hover 
+		{
+			color:white;
+			border: none;
+		}
+
+		.btn:hover 
+		{
+			color:white;
+			border: none;
+		}
+
+		.greyscale 
+		{
+			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+			filter: grayscale(100%);
+			transition: 0.5s;
+		}
+
+		.greyscale:hover 
+		{
+			-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+			filter: grayscale(0%);
+			transition: 0.2s;
+		}
+
+		.shadow 
+		{
+			text-shadow: 2px 2px black; 
+			box-shadow: 2px 2px 2px #000000;
+		}
+
+		.noshadow 
+		{
+			text-shadow: none;
+			box-shadow: none;
+		}
+
+		.softwareblock 
+		{
+			display:flex; 
+			flex-wrap: wrap;
+		}
+
+		.softwareicon 
+		{
+			float:left; 
+			width:30px; 
+			height:30px;
+			-webkit-filter: drop-shadow(2px 2px 2px #000000);
+			filter: drop-shadow(2px 2px 2px #000000);
+		}
+
+		.softwarename 
+		{
+			margin-left:20px; 
+			margin-top:3px;
+		}
 
 
-	       /* Sidebar Styles */
-	       #sidebar {
-	         z-index: 1000;
-	         position: fixed;
-	         left: 200px;
-	         width: 200px;
-	         height: 100%;
-	         margin-left: -200px;
-	         overflow-y: auto;
-	         background: #292929;
-	         -webkit-transition: all 0.5s ease;
-	         -moz-transition: all 0.5s ease;
-	         -o-transition: all 0.5s ease;
-	         transition: all 0.5s ease;
-	       }
+		/* Sidebar Styles */
+		#sidebar 
+		{
+			z-index: 1000;
+			position: fixed;
+			left: 200px;
+			width: 200px;
+			height: 100%;
+			margin-left: -200px;
+			overflow-y: auto;
+			background: #292929;
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+		}
 
-	       #sidebar header {
-	         background-color: #1a1a1a;
-	         font-size: 20px;
-	         line-height: 52px;
-	         text-align: center;
-	         padding-bottom:10px;
-	       }
+		#sidebar header 
+		{
+			background-color: #1a1a1a;
+			font-size: 20px;
+			line-height: 52px;
+			text-align: center;
+			padding-bottom:10px;
+		}
 
-	       #sidebar header a {
-	         color: #A7CCED;
-	         display: block;
-	         text-decoration: none;
-	       }
+		#sidebar header a 
+		{
+			color: #A7CCED;
+			display: block;
+			text-decoration: none;
+		}
 
-	       #sidebar header a:hover {
-	         color: white;
-	       }
+		#sidebar header a:hover 
+		{
+			color: white;
+		}
 
-	       #sidebar .nav{
-	         font-size: 22px;
-	       }
+		#sidebar .nav 
+		{
+			font-size: 22px;
+		}
 
-	       #sidebar img
-	       {
-	           margin-top: 20px;
-	           height: 125px;
-	           width: 125px;
-	           border-radius: 50%;
-	           border: 5px solid #292929;
-	       }
+		#sidebar img
+		{
+			margin-top: 20px;
+			height: 125px;
+			width: 125px;
+			border-radius: 50%;
+			border: 5px solid #292929;
+		}
 
-	       #sidebar header i
-	       {
-	           color:#87a5cb;
-	           width: 32px;
-	           height: 32px;
-	           border-radius: 50%;
-	           background:#292929;
-	           padding-top: 7px;
-	           margin: 5px;
-	       }
+		#sidebar header i
+		{
+			color:#87a5cb;
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			background:#292929;
+			padding-top: 7px;
+			margin: 5px;
+		}
 
-	       #sidebar header i:hover
-	       {
-	           color:white;
-	       }
+		#sidebar header i:hover
+		{
+			color:white;
+		}
 
-	       #sidebar header p
-	       {
-	           color:#cccccc;
-	           font-size:14px;
-	           font-style: italic;
-	           margin-top:-25px;
-	           margin-bottom:-10px;
-	       }
+		#sidebar header p
+		{
+			color:#cccccc;
+			font-size:14px;
+			font-style: italic;
+			margin-top:-25px;
+			margin-bottom:-10px;
+		}
 
-	       #sidebar .nav a{
-	         background: none;
-	         color: #A7CCED;
-	         font-size: 14px;
-	         padding: 12px 24px;
-	         text-decoration: none;
-	       }
+		#sidebar .nav a
+		{
+			background: none;
+			color: #A7CCED;
+			font-size: 14px;
+			padding: 12px 24px;
+			text-decoration: none;
+		}
 
-	       #sidebar .nav a:hover{
-	         background: none;
-	         color: #ECEFF1;
-	       }
+		#sidebar .nav a:hover
+		{
+			background: none;
+			color: #ECEFF1;
+		}
 
-	       #sidebar .nav a i{
-	         margin-right: 16px;
-	       }
+		#sidebar .nav a i
+		{
+			margin-right: 16px;
+		}
 	</style>
 </head>
 
@@ -296,11 +367,18 @@
 								<h5>Software proficiency</h5>
 								<div class="row">
 									<div class="col">
-										<ul>
-											<li>Unity</li>
-											<li>Photoshop</li>
-											<li>Blender</li>
-										</ul>
+										<div class="softwareblock">
+											<img class="softwareicon" src="http://dfbuddy.com/icon_unity.png" class="d-block" alt="Unity"></img>
+											<p class="softwarename shadow">Unity</p>
+										</div>
+										<div class="softwareblock">
+											<img class="softwareicon" src="http://dfbuddy.com/icon_photoshop.png" class="d-block" alt="Photoshop"></img>
+											<p class="softwarename shadow">Photoshop</p>
+										</div>
+										<div class="softwareblock">
+											<img class="softwareicon" src="http://dfbuddy.com/icon_blender.png" class="d-block" alt="Blender"></img>
+											<p class="softwarename shadow">Blender</p>
+										</div>
 									</div>
 								</div>
 							</div>
