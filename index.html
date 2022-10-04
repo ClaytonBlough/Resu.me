@@ -31,6 +31,7 @@
 		#viewport 
 		{
 			padding-left: 250px;
+			padding-right: 50px;
 			-webkit-transition: all 0.5s ease;
 			-moz-transition: all 0.5s ease;
 			-o-transition: all 0.5s ease;
@@ -48,50 +49,6 @@
 		{
 			padding-top:15px;
 			padding-bottom:15px;
-		}
-
-		div h1
-		{
-			color:#A7CCED;
-		}
-
-		div h5 
-		{
-			color:white;
-		}
-
-		div ul 
-		{
-			color:#b0b0b0;
-		}
-
-		div p 
-		{
-			color:white;
-		}
-
-		div i 
-		{
-			color:white;
-		}
-
-
-		h1 a 
-		{
-			color:#A7CCED;
-			text-decoration: none;
-		}
-
-		h1 a:hover 
-		{
-			color:white;
-		}
-
-		h1 a i 
-		{
-			font-size:12px;
-			position:relative; 
-			bottom:3px;
 		}
 
 		.white-text 
@@ -116,14 +73,13 @@
 		.content-block 
 		{
 			background-color:#1a1a1a;
-			background-image: linear-gradient(#292929, #292929, #1a1a1a);
+			background-image: linear-gradient(#292929, #1a1a1a);
 			background-repeat: no-repeat;
 			background-position:top center; 
 			background-size: cover; 
 			overflow:hidden;
 			text-shadow: 2px 2px black; 
 			box-shadow: 2px 2px 12px #000000;
-			min-height:500px;
 		}
 
 		.content-block-bg 
@@ -144,20 +100,6 @@
 			width: 35%;
 			float:right;
 			color:grey;
-		}
-
-		.greyscale 
-		{
-			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-			filter: grayscale(100%);
-			transition: 0.5s;
-		}
-
-		.greyscale:hover 
-		{
-			-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-			filter: grayscale(0%);
-			transition: 0.2s;
 		}
 
 		.shadow 
@@ -215,27 +157,15 @@
 			-moz-transition: all 0.5s ease;
 			-o-transition: all 0.5s ease;
 			transition: all 0.5s ease;
+			display:inline-block;
 		}
 
 		#sidebar header 
 		{
 			background-color: #292929;
 			font-size: 20px;
-			line-height: 52px;
 			text-align: center;
-			padding-bottom:10px;
-		}
-
-		#sidebar header a 
-		{
-			color: #A7CCED;
-			display: block;
-			text-decoration: none;
-		}
-
-		#sidebar header a:hover 
-		{
-			color: white;
+			padding-bottom:30px;
 		}
 
 		#sidebar .nav 
@@ -252,51 +182,6 @@
 			border: 5px solid #292929;
 		}
 
-		#sidebar header i
-		{
-			color:#87a5cb;
-			width: 32px;
-			height: 32px;
-			border-radius: 50%;
-			background:#292929;
-			padding-top: 7px;
-			margin: 5px;
-		}
-
-		#sidebar header i:hover
-		{
-			color:white;
-		}
-
-		#sidebar header p
-		{
-			color:#cccccc;
-			font-size:14px;
-			font-style: italic;
-			margin-top:-25px;
-			margin-bottom:-10px;
-		}
-
-		#sidebar .nav a
-		{
-			background: none;
-			color: #A7CCED;
-			font-size: 14px;
-			padding: 12px 24px;
-			text-decoration: none;
-		}
-
-		#sidebar .nav a:hover
-		{
-			background: none;
-			color: #ECEFF1;
-		}
-
-		#sidebar .nav a i
-		{
-			margin-right: 16px;
-		}
-
 		@media only screen and (max-width: 600px) 
 		{
 			.content-block 
@@ -306,7 +191,6 @@
 
 			#viewport 
 			{
-				padding-left: 0;
 				padding:10px;
 			}
 
@@ -323,48 +207,42 @@
 	</style>
 </head>
 
-<body id="page-top" style="background-color: #121212">
+<body id="page-top" style="background-image: linear-gradient(#1a1a1a, #121212)">
 	<div id="viewport">
 		<!-- Sidebar -->
 		<div id="sidebar">
 			<header>
-				<img alt="" src="https://pbs.twimg.com/profile_images/1553923005809508352/REOX5n61_400x400.jpg"> <a href="#">Clayton Blough</a>
-				<p>claytonblough@email.com</p>
-				<div style="display: flex; align-items: center; justify-content: center">
-					<a class="sociallink" href="https://www.linkedin.com/in/clayton-blough-16933a22b/" target="_blank"><i class="fab fa-linkedin-in"></i></a> 
-					<a class="sociallink" href="#" target="_blank"><i class="fas fa-envelope"></i></a> 
-				</div>
+				<img src="https://pbs.twimg.com/profile_images/1553923005809508352/REOX5n61_400x400.jpg"> 
+				<p class="white-text" style="margin-bottom: -8px;">Clayton Blough</p>
+				<a class="interactive fs-6" href="mailto:claytonblough@email.com">claytonblough@email.com</p>
 			</header>
-			<ul class="nav clearfix">
+			<ul class="nav fs-6 d-block px-4 py-2">
 				<li>
-					<a href="#resume">Resume</a>
+					<a class="interactive" href="#resume">Resume</a>
 				</li>
 				<li>
-					<a href="#deadfrontier2">Dead Frontier 2</a>
+					<a class="interactive" href="#deadfrontier2">Dead Frontier 2</a>
 				</li>
 				<li>
-					<a href="#deadfrontier1">Dead Frontier 1</a>
+					<a class="interactive" href="#deadfrontier1">Dead Frontier 1</a>
 				</li>
 				<li>
-					<a href="#marchoftheliving">March of the Living</a>
-				</li>
-				<li>
-					<a href="#contact">Contact</a>
+					<a class="interactive" href="#marchoftheliving">March of the Living</a>
 				</li>
 			</ul>
 		</div>
 
 		<!-- Page Content -->
-		<div class="container">
+		<div class="container-fluid">
 
 			<!-- RESUME BLOCK -->
-			<div class="row">
+			<div id="resume" class="row">
 				<div class="col content-block">
-					<div id="resume">
+					<div class="white-text">
 						<h1>
-							<a href="#" target="_blank">
+							<a class="interactive" href="#" target="_blank">
 								About
-								<i class="fas fa-download"></i>
+								<!--<i class="fas fa-download"></i>-->
 							</a> 
 						</h1>
 						<p>Hello, I am Clayton.</p>
@@ -394,18 +272,28 @@
 								<h5>Software proficiency</h5>
 								<div class="row">
 									<div class="col">
-										<div class="software-block">
-											<img class="software-icon" src="http://dfbuddy.com/icon_unity.png" class="d-block" alt="Unity"></img>
+										<a class="software-block interactive" href="https://unity.com/" target="_blank">
+											<img class="software-icon" src="http://dfbuddy.com/icon_unity.png" class="d-block"></img>
 											<p class="software-name shadow">Unity</p>
-										</div>
-										<div class="software-block">
-											<img class="software-icon" src="http://dfbuddy.com/icon_photoshop.png" class="d-block" alt="Photoshop"></img>
+										</a>
+										<a class="software-block interactive" href="https://www.adobe.com/products/photoshop.html" target="_blank">
+											<img class="software-icon" src="http://dfbuddy.com/icon_photoshop.png" class="d-block" alt=""></img>
 											<p class="software-name shadow">Photoshop</p>
-										</div>
-										<div class="software-block">
-											<img class="software-icon" src="http://dfbuddy.com/icon_blender.png" class="d-block" alt="Blender"></img>
+										</a>
+										<a class="software-block interactive" href="https://www.blender.org/" target="_blank">
+											<img class="software-icon" src="http://dfbuddy.com/icon_blender.png" class="d-block" alt=""></img>
 											<p class="software-name shadow">Blender</p>
-										</div>
+										</a>
+									</div>
+									<div class="col">
+										<a class="software-block interactive" href="https://www.plasticscm.com/" target="_blank">
+											<img class="software-icon" src="http://dfbuddy.com/icon_plasticscm.png" class="d-block" alt=""></img>
+											<p class="software-name shadow">Plastic SCM</p>
+										</a>
+										<a class="software-block interactive" href="https://trello.com/en" target="_blank">
+											<img class="software-icon" src="http://dfbuddy.com/icon_trello.png" class="d-block" alt=""></img>
+											<p class="software-name shadow">Trello</p>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -415,19 +303,13 @@
 			</div>
 
 			<!-- DEAD FRONTIER TWO (2) BLOCK -->
-			<div class="row">
+			<div id="deadfrontier2" class="row">
 				<div class="col content-block-bg">
 					<div class="row content-blocks" style="background: url('http://dfbuddy.com/deadfrontier2_bg.png') no-repeat;">
-						<div class="col-sm">
-							<div id="deadfrontier2">
-								<!--<h1>
-									<a href="https://deadfrontier.com/" target="_blank">
-										Dead Frontier 2
-										<i class="fas fa-external-link-alt"></i>
-									</a>
-								</h1>-->
+						<div class="col-5">
+							<div class="white-text">
 								<a href="https://store.steampowered.com/app/744900/Dead_Frontier_2/" target="_blank">
-									<img src="http://dfbuddy.com/deadfrontier2_title.png" class="d-block w-80" alt="Dead Frontier 2">
+									<img src="http://dfbuddy.com/deadfrontier2_title.png" class="d-block" alt="Dead Frontier 2">
 										<i class="fas fa-external-link-alt content-title-link-icon"></i>
 									</img>
 								</a>
@@ -436,7 +318,7 @@
 								<br><br><br>
 								<ul>
 									<b><h5>Primary Roles</h5></b>
-									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2gamedesign" aria-expanded="false" aria-controls="deadfrontier2gamedesign">
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2gamedesign" aria-expanded="false" aria-controls="deadfrontier2gamedesign">
 										■  Game Design
 									</li>
 									<br>
@@ -445,7 +327,7 @@
 											Designed a new Halloween boss.
 										</p>
 									</div>
-									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2gameplayprogramming" aria-expanded="false" aria-controls="deadfrontier2gameplayprogramming">
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2gameplayprogramming" aria-expanded="false" aria-controls="deadfrontier2gameplayprogramming">
 										■  Gameplay Programming
 									</li>
 									<br>
@@ -456,7 +338,7 @@
 									</div>
 									<br><br>
 									<b><h5>Secondary Roles</h5></b>
-									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2developertools" aria-expanded="false" aria-controls="deadfrontier2developertools">
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2developertools" aria-expanded="false" aria-controls="deadfrontier2developertools">
 										■  Developer Tools
 									</li>
 									<br>
@@ -465,7 +347,7 @@
 											Created a tool that automatically processes in-game 3D assets and renders them out to 2D UI icons with transparent backgrounds.
 										</p>
 									</div>
-									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2shaderprogramming" aria-expanded="false" aria-controls="deadfrontier2shaderprogramming">
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2shaderprogramming" aria-expanded="false" aria-controls="deadfrontier2shaderprogramming">
 										■  Shader Programming
 									</li>
 									<br>
@@ -474,7 +356,7 @@
 											Created a shader that enabled in-game assets to be dyed any color without detail loss, utilizing a highly efficient masking approach. This had the added benefit of a 35% reduction in texture memory usage with the player avatar.
 										</p>
 									</div>
-									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2uidesign" aria-expanded="false" aria-controls="deadfrontier2uidesign">
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2uidesign" aria-expanded="false" aria-controls="deadfrontier2uidesign">
 										■  UI Design / Programming
 									</li>
 									<br>
@@ -485,7 +367,7 @@
 											▪ Redesigned game menu UX and created new graphics / icons. 
 										</p>
 									</div>
-									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier23dmodeling" aria-expanded="false" aria-controls="deadfrontier23dmodeling">
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier23dmodeling" aria-expanded="false" aria-controls="deadfrontier23dmodeling">
 										■  3D Modelling / Texturing
 									</li>
 									<br>
@@ -500,46 +382,16 @@
 								</ul>
 							</div>
 						</div>
-
-						<div class="col">
-							<!--<div id="deadfrontier2carousel" class="carousel slide data-bs-ride="false">
-							  <div class="carousel-inner">
-							    <div class="carousel-item active">
-							      <img src="http://dfbuddy.com/deadfrontier2_logo.png" class="d-block w-100" alt="...">
-							    </div>
-							    <div class="carousel-item">
-							      <img src="http://dfbuddy.com/deadfrontier2_logo.png" class="d-block w-100" alt="...">
-							    </div>
-							    <div class="carousel-item">
-							      <img src="http://dfbuddy.com/deadfrontier2_logo.png" class="d-block w-100" alt="...">
-							    </div>
-							  </div>
-							  <button class="carousel-control-prev" type="button" data-bs-target="#deadfrontier2carousel" data-bs-slide="prev">
-							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							    <span class="visually-hidden">Previous</span>
-							  </button>
-							  <button class="carousel-control-next" type="button" data-bs-target="#deadfrontier2carousel" data-bs-slide="next">
-							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-							    <span class="visually-hidden">Next</span>
-							  </button>
-							</div>-->
-						</div>
 					</div>
 				</div>
 			</div>	
 
 			<!-- DEAD FRONTIER ONE (1) BLOCK -->
-			<div class="row">
+			<div id="deadfrontier1" class="row">
 				<div class="col content-block-bg">
 					<div class="row content-block" style="background: url('http://dfbuddy.com/deadfrontier1_bg.png') no-repeat;">
-						<div class="col">
-							<div id="deadfrontier1">
-								<!--<h1>
-									<a href="https://deadfrontier.com/" target="_blank">
-										Dead Frontier 1
-										<i class="fas fa-external-link-alt"></i>
-									</a>
-								</h1>-->
+						<div class="col-5">
+							<div class="white-text">
 								<a href="https://deadfrontier.com/" target="_blank">
 									<img src="http://dfbuddy.com/deadfrontier1_title.png" class="d-block w-80" alt="Dead Frontier 1">
 										<i class="fas fa-external-link-alt content-title-link-icon"></i>
@@ -550,7 +402,7 @@
 								<br><br><br>
 								<ul>
 									<b><h5>Primary Roles</h5></b>
-									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1gamedesign" aria-expanded="false" aria-controls="deadfrontier1gamedesign">
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1gamedesign" aria-expanded="false" aria-controls="deadfrontier1gamedesign">
 										■  Game Design
 									</li>
 									<br>
@@ -559,7 +411,7 @@
 											Designed multiple large-scale game expansions as well overhauled previous expansions. Area themes, all things weapons and armor, and new enemies.
 										</p>
 									</div>
-									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1gameplayprogramming" aria-expanded="false" aria-controls="deadfrontier1gameplayprogramming">
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1gameplayprogramming" aria-expanded="false" aria-controls="deadfrontier1gameplayprogramming">
 										■  Gameplay Programming
 									</li>
 									<br>
@@ -570,7 +422,7 @@
 									</div>
 									<br><br>
 									<b><h5>Secondary Roles</h5></b>
-									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1shaderprogramming" aria-expanded="false" aria-controls="deadfrontier1shaderprogramming">
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1shaderprogramming" aria-expanded="false" aria-controls="deadfrontier1shaderprogramming">
 										■  Shader Programming
 									</li>
 									<br>
@@ -579,7 +431,7 @@
 											Created a shader that allowed a majority of in-game cosmetics to be dyed any color, using a layering approach that compiled player clothing into a single texture.
 										</p>
 									</div>
-									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1optimization" aria-expanded="false" aria-controls="deadfrontier1optimization">
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1optimization" aria-expanded="false" aria-controls="deadfrontier1optimization">
 										■  System Optimization
 									</li>
 									<br>
@@ -588,16 +440,16 @@
 											Improved game performance and load times by over 50% by refactoring systems.
 										</p>
 									</div>
-									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1uidesign" aria-expanded="false" aria-controls="deadfrontier1uidesign">
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1uidesign" aria-expanded="false" aria-controls="deadfrontier1uidesign">
 										■  2D Item Thumbnails
 									</li>
 									<br>
 									<div class="collapse no-shadow" id="deadfrontier1uidesign">
 										<p>
-											Created 100+ different item images ranging from weapons, armour sets, cosmetics, crafting components, and more for 2D male and female avatars.
+											Digitally painted 100+ different item images ranging from weapons, armour sets, cosmetics, crafting components, and more for 2D male and female avatars.
 										</p>
 									</div>
-									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier13dmodeling" aria-expanded="false" aria-controls="deadfrontier13dmodeling">
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier13dmodeling" aria-expanded="false" aria-controls="deadfrontier13dmodeling">
 										■  3D Modelling / Texturing
 									</li>
 									<br>
@@ -611,45 +463,16 @@
 							</div>
 						</div>
 
-						<div class="col">
-							<!--<div id="deadfrontier1carousel" class="carousel slide data-bs-ride="false">
-							  <div class="carousel-inner">
-							    <div class="carousel-item active">
-							      <img src="http://dfbuddy.com/deadfrontier1_artportfolio.png" class="d-block w-100" alt="...">
-							    </div>
-							    <div class="carousel-item">
-							      <img src="http://dfbuddy.com/deadfrontier1_artportfolio.png" class="d-block w-100" alt="...">
-							    </div>
-							    <div class="carousel-item">
-							      <img src="http://dfbuddy.com/deadfrontier1_artportfolio.png" class="d-block w-100" alt="...">
-							    </div>
-							  </div>
-							  <button class="carousel-control-prev" type="button" data-bs-target="#deadfrontier1carousel" data-bs-slide="prev">
-							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							    <span class="visually-hidden">Previous</span>
-							  </button>
-							  <button class="carousel-control-next" type="button" data-bs-target="#deadfrontier1carousel" data-bs-slide="next">
-							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-							    <span class="visually-hidden">Next</span>
-							  </button>
-							</div>-->
-						</div>
 					</div>
 				</div>
 			</div>
 
 			<!-- MARCH OF THE LIVING BLOCK -->
-			<div class="row">
+			<div id="marchoftheliving" class="row">
 				<div class="col content-block-bg">
 					<div class="row content-block" style="background: url('http://dfbuddy.com/marchoftheliving_bg.png') no-repeat;">
-						<div class="col">
-							<div id="marchoftheliving">
-								<!--<h1>
-									<a href="https://store.steampowered.com/app/458000/March_of_the_Living/" target="_blank">
-										March of the Living
-										<i class="fas fa-external-link-alt"></i>
-									</a>
-								</h1>-->
+						<div class="col-5">
+							<div class="white-text">
 								<a href="https://store.steampowered.com/app/458000/March_of_the_Living/" target="_blank">
 									<img src="http://dfbuddy.com/marchoftheliving_title.png" class="d-block w-80" alt="March of the Living">
 										<i class="fas fa-external-link-alt content-title-link-icon"></i>
@@ -660,7 +483,7 @@
 								<br><br><br>
 								<ul>
 									<b><h5>Primary Roles</h5></b>
-									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#marchofthelivingencounterdesign" aria-expanded="false" aria-controls="marchofthelivingencounterdesign">
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#marchofthelivingencounterdesign" aria-expanded="false" aria-controls="marchofthelivingencounterdesign">
 										■  Encounter Design
 									</li>
 									<br>
@@ -669,7 +492,7 @@
 											Designed random encounters with varying rewards or consequences influenced by the player's choices and character items.
 										</p>
 									</div>
-									<li class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#marchofthelivingencounterwriting" aria-expanded="false" aria-controls="marchofthelivingencounterwriting">
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#marchofthelivingencounterwriting" aria-expanded="false" aria-controls="marchofthelivingencounterwriting">
 										■  Encounter Writing
 									</li>
 									<br>
@@ -682,39 +505,16 @@
 								</ul>
 							</div>
 						</div>
-
-						<div class="col">
-							<!--<div id="marchofthelivingcarousel" class="carousel slide data-bs-ride="false">
-							  <div class="carousel-inner">
-							    <div class="carousel-item active">
-							      <img src="http://dfbuddy.com/marchoftheliving_credits.png" class="d-block w-100" alt="...">
-							    </div>
-							    <div class="carousel-item">
-							      <img src="http://dfbuddy.com/marchoftheliving_banditevent.png" class="d-block w-100" alt="...">
-							    </div>
-							    <div class="carousel-item">
-							      <img src="http://dfbuddy.com/marchoftheliving_banditeventresult.png" class="d-block w-100" alt="...">
-							    </div>
-							  </div>
-							  <button class="carousel-control-prev" type="button" data-bs-target="#marchofthelivingcarousel" data-bs-slide="prev">
-							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							    <span class="visually-hidden">Previous</span>
-							  </button>
-							  <button class="carousel-control-next" type="button" data-bs-target="#marchofthelivingcarousel" data-bs-slide="next">
-							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-							    <span class="visually-hidden">Next</span>
-							  </button>
-							</div>-->
-						</div>
 					</div>
 				</div>
 			</div>
 
 			<!-- CONTACT BLOCK -->
-			<div class="row custom-footer">
-				<div class="col content-block">
-					<div id="contact">
-						<p>Email</p>
+			<div id="contact" class="row">
+				<div class="col content-block custom-footer">
+					<div class="white-text">
+						<a class="sociallink interactive px-2 fs-4" href="mailto:claytonblough@email.com" target="_blank"><i class="fas fa-envelope"></i></a> 
+						<a class="sociallink interactive px-2 fs-4" href="https://www.linkedin.com/in/clayton-blough-16933a22b/" target="_blank"><i class="fab fa-linkedin-in"></i></a> 
 					</div>
 				</div>
 			</div>
