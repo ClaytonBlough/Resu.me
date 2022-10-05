@@ -58,7 +58,7 @@
 
 		.interactive 
 		{
-			color:#A7CCED;
+			color:#8bbdea;
 			text-decoration: none;
 			border: none;
 		}
@@ -73,7 +73,7 @@
 		.content-block 
 		{
 			background-color:#1a1a1a;
-			background-image: linear-gradient(#292929, #1a1a1a);
+			background-image: linear-gradient(#252930, #23272e, #1a1a1a);
 			background-repeat: no-repeat;
 			background-position:top center; 
 			background-size: cover; 
@@ -166,7 +166,7 @@
 
 		#sidebar header 
 		{
-			background-color: #292929;
+			background-image: linear-gradient(#252930, #23272e, #1a1a1a);
 			font-size: 20px;
 			text-align: center;
 			padding-bottom:30px;
@@ -213,6 +213,17 @@
 				margin-left: 0;
 			}
 		}
+
+		@media only screen and (max-width: 1400px) 
+		{
+			.fa-external-link-alt {
+				visibility: hidden;
+			}
+
+			hr {
+				visibility: hidden;
+			}
+		}
 	</style>
 </head>
 
@@ -249,13 +260,13 @@
 				<div class="row">
 				<div class="col about-col">
 					<h1>
-						<a class="interactive" href="#" target="_blank">
+						<p>
 							About
 							<!--<i class="fas fa-download"></i>-->
-						</a> 
+						</p> 
 					</h1>
 					<div>
-						<p>Hello! I'm Clayton Blough, a passionate game designer and gameplay programmer based in California, USA. <br><br>My passion for video games pushed me to start teaching myself game development over a decade ago. I now have half a decade of experience working on indie MMORPG titles. I love being able to design and develop interactive experiences that people can enjoy together. I take a lot of joy in coming up with ideas for new adventurous areas, formidable enemies, or inventive weapons and bringing them to life.<br><br>Got an interesting project? Send me a message at claytonblough@email.com</p>
+						<p>Hello! I'm Clayton Blough, a passionate game designer and gameplay programmer based in California, USA. <br><br>My passion for video games pushed me to start teaching myself game development over a decade ago. I now have half a decade of experience working on indie MMORPG titles. I love being able to design and develop interactive experiences that people can enjoy together. I take a lot of joy in coming up with ideas for new adventurous areas, formidable enemies, or inventive weapons and bringing them to life.<br><br>Got an interesting project? Send me a message at <a class="interactive" href="mailto:claytonblough@email.com">claytonblough@email.com</a></p>
 					</div>
 				</div>
 				<div class="col">
@@ -312,7 +323,7 @@
 			<!-- DEAD FRONTIER TWO (2) BLOCK -->
 			<div id="deadfrontier2" class="row">
 				<div class="col content-block-bg">
-					<div class="row content-blocks" style="background: url('http://dfbuddy.com/deadfrontier2_bg.png') no-repeat;">
+					<div class="row content-block" style="background: linear-gradient(to bottom, rgba(37, 41, 48, 0.6), rgba(35, 39, 46, 0.3), rgba(26, 26, 26, 0.2)), url('http://dfbuddy.com/deadfrontier2_bg.png') no-repeat ;">
 						<div class="col">
 							<div class="white-text">
 								<a href="https://store.steampowered.com/app/744900/Dead_Frontier_2/" target="_blank">
@@ -389,6 +400,8 @@
 								</ul>
 							</div>
 						</div>
+						<div class="col">
+						</div>
 					</div>
 				</div>
 			</div>	
@@ -396,7 +409,7 @@
 			<!-- DEAD FRONTIER ONE (1) BLOCK -->
 			<div id="deadfrontier1" class="row">
 				<div class="col content-block-bg">
-					<div class="row content-block" style="background: url('http://dfbuddy.com/deadfrontier1_bg.png') no-repeat;">
+					<div class="row content-block" style="background: linear-gradient(to bottom, rgba(37, 41, 48, 0.6), rgba(35, 39, 46, 0.3), rgba(26, 26, 26, 0.2)), url('http://dfbuddy.com/deadfrontier1_bg.png') no-repeat;">
 						<div class="col">
 							<div class="white-text">
 								<a href="https://deadfrontier.com/" target="_blank">
@@ -469,7 +482,8 @@
 								</ul>
 							</div>
 						</div>
-
+						<div class="col">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -477,7 +491,7 @@
 			<!-- MARCH OF THE LIVING BLOCK -->
 			<div id="marchoftheliving" class="row">
 				<div class="col content-block-bg">
-					<div class="row content-block" style="background: url('http://dfbuddy.com/marchoftheliving_bg.png') no-repeat;">
+					<div class="row content-block" style="background: linear-gradient(to bottom, rgba(37, 41, 48, 0.6), rgba(35, 39, 46, 0.3), rgba(26, 26, 26, 0.2)), url('http://dfbuddy.com/marchoftheliving_bg.png') no-repeat;">
 						<div class="col">
 							<div class="white-text">
 								<a href="https://store.steampowered.com/app/458000/March_of_the_Living/" target="_blank">
@@ -511,6 +525,8 @@
 									<br>
 								</ul>
 							</div>
+						</div>
+						<div class="col">
 						</div>
 					</div>
 				</div>
