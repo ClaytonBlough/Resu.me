@@ -96,7 +96,8 @@
 
 		.content-title-link-icon
 		{
-			margin-top:-20px;
+			margin-top:-25px;
+			margin-right:120px;
 			width: 35%;
 			float:right;
 			color:grey;
@@ -144,7 +145,6 @@
 		.about-col {
 			margin-right:150px;
 		}
-
 
 		/* Sidebar Styles */
 		#sidebar 
@@ -194,8 +194,8 @@
 			}
 
 			.about-col {
-				margin-left:25px;
-				margin-right:25px;
+				margin-left:10px;
+				margin-right:10px;
 			}
 
 			#viewport 
@@ -214,8 +214,13 @@
 			}
 		}
 
-		@media only screen and (max-width: 1400px) 
+		@media only screen and (max-width: 1800px) 
 		{
+
+			.project-description {
+				padding-right:0px;
+			}
+
 			.fa-external-link-alt {
 				visibility: hidden;
 			}
@@ -234,11 +239,11 @@
 			<header>
 				<img src="https://pbs.twimg.com/profile_images/1553923005809508352/REOX5n61_400x400.jpg"> 
 				<p class="white-text" style="margin-bottom: -8px;">Clayton Blough</p>
-				<a class="interactive fs-6" href="mailto:claytonblough@outlook.com">claytonblough@outlook.com</p>
+				<a class="interactive" style="font-size: 14px;" href="mailto:claytonblough@outlook.com">claytonblough@outlook.com</p>
 			</header>
 			<ul class="nav fs-6 d-block px-4 py-2">
 				<li>
-					<a class="interactive" href="#resume">Resume</a>
+					<a class="interactive" href="#resume">About</a>
 				</li>
 				<li>
 					<a class="interactive" href="#deadfrontier2">Dead Frontier 2</a>
@@ -276,15 +281,18 @@
 						<div class="col">
 							<ul>
 								<li>Game Design</li>
+								<li>Gameplay Programming</li>
+								<li>Rapid Prototyping</li>
 								<li>C#</li>
 								<li>JavaScript</li>
 							</ul>
 						</div>
 						<div class="col">
 							<ul>
-								<li>More Game Design</li>
-								<li>More C#</li>
-								<li>More JavaScript</li>
+								<li>UI/UX Design</li>
+								<li>Digital Painting</li>
+								<li>3D Modeling</li>
+								<li>Creative Writing</li>
 							</ul>
 						</div>
 					</div>
@@ -296,6 +304,16 @@
 								<img class="software-icon" src="http://dfbuddy.com/icon_unity.png" class="d-block"></img>
 								<p class="software-name shadow">Unity</p>
 							</a>
+							<a class="software-block interactive" href="https://visualstudio.microsoft.com/" target="_blank">
+								<img class="software-icon" src="http://dfbuddy.com/icon_visualstudio.png" class="d-block" alt=""></img>
+								<p class="software-name shadow">Visual Studio</p>
+							</a>
+							<a class="software-block interactive" href="https://www.plasticscm.com/" target="_blank">
+								<img class="software-icon" src="http://dfbuddy.com/icon_plasticscm.png" class="d-block" alt=""></img>
+								<p class="software-name shadow">Plastic SCM</p>
+							</a>
+						</div>
+						<div class="col">
 							<a class="software-block interactive" href="https://www.adobe.com/products/photoshop.html" target="_blank">
 								<img class="software-icon" src="http://dfbuddy.com/icon_photoshop.png" class="d-block" alt=""></img>
 								<p class="software-name shadow">Photoshop</p>
@@ -303,12 +321,6 @@
 							<a class="software-block interactive" href="https://www.blender.org/" target="_blank">
 								<img class="software-icon" src="http://dfbuddy.com/icon_blender.png" class="d-block" alt=""></img>
 								<p class="software-name shadow">Blender</p>
-							</a>
-						</div>
-						<div class="col">
-							<a class="software-block interactive" href="https://www.plasticscm.com/" target="_blank">
-								<img class="software-icon" src="http://dfbuddy.com/icon_plasticscm.png" class="d-block" alt=""></img>
-								<p class="software-name shadow">Plastic SCM</p>
 							</a>
 							<a class="software-block interactive" href="https://trello.com/en" target="_blank">
 								<img class="software-icon" src="http://dfbuddy.com/icon_trello.png" class="d-block" alt=""></img>
@@ -324,15 +336,16 @@
 			<div id="deadfrontier2" class="row">
 				<div class="col content-block-bg">
 					<div class="row content-block" style="background: linear-gradient(to bottom, rgba(37, 41, 48, 0.6), rgba(35, 39, 46, 0.3), rgba(26, 26, 26, 0.2)), url('http://dfbuddy.com/deadfrontier2_bg.png') no-repeat ;">
-						<div class="col">
+						<div class="col-md-4">
 							<div class="white-text">
 								<a href="https://store.steampowered.com/app/744900/Dead_Frontier_2/" target="_blank">
 									<img src="http://dfbuddy.com/deadfrontier2_title.png" class="d-block" alt="Dead Frontier 2">
 										<i class="fas fa-external-link-alt content-title-link-icon"></i>
 									</img>
 								</a>
-								<hr class="content-title-hr">
-								<i>Dead Frontier 2 is a survival horror MMORPG.</i>
+								<br>
+								<!-- <hr class="content-title-hr">-->
+								<i class="project-description">Dead Frontier 2 is a survival horror MMORPG. As one of the few survivors of the outbreak, you must scratch a living out of the decaying ruins of society. Scavenge for supplies, improve your skills, and trade with other players. All the while, keeping your eyes peeled for the infected lurking around every corner.</i>
 								<br><br><br>
 								<ul>
 									<b><h5>Primary Roles</h5></b>
@@ -342,7 +355,7 @@
 									<br>
 									<div class="collapse" id="deadfrontier2gamedesign">
 										<p>
-											Designed a new Halloween boss. (Needs fleshed out)
+											Designed a Halloween Jack-o'-lantern boss with themetic mechanics and attacks.
 										</p>
 									</div>
 									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2gameplayprogramming" aria-expanded="false" aria-controls="deadfrontier2gameplayprogramming">
@@ -351,20 +364,11 @@
 									<br>
 									<div class="collapse no-shadow" id="deadfrontier2gameplayprogramming">
 										<p>
-											Gameplay programming section here. (Needs fleshed out)
+											Developed a system of holstering weapons to communicate and display secondary unused weapons to players.
 										</p>
 									</div>
 									<br><br>
 									<b><h5>Secondary Roles</h5></b>
-									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2developertools" aria-expanded="false" aria-controls="deadfrontier2developertools">
-										■  Developer Tools
-									</li>
-									<br>
-									<div class="collapse no-shadow" id="deadfrontier2developertools">
-										<p>
-											Created a tool that automatically processes in-game 3D assets and renders them out to 2D UI icons with transparent backgrounds.
-										</p>
-									</div>
 									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2shaderprogramming" aria-expanded="false" aria-controls="deadfrontier2shaderprogramming">
 										■  Shader Programming
 									</li>
@@ -385,6 +389,15 @@
 											▪ Redesigned game menu UX and created new graphics / icons. 
 										</p>
 									</div>
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2developertools" aria-expanded="false" aria-controls="deadfrontier2developertools">
+										■  Developer Tools
+									</li>
+									<br>
+									<div class="collapse no-shadow" id="deadfrontier2developertools">
+										<p>
+											Created a tool that automatically processes in-game 3D assets and renders them out to 2D UI icons with transparent backgrounds.
+										</p>
+									</div>
 									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier23dmodeling" aria-expanded="false" aria-controls="deadfrontier23dmodeling">
 										■  3D Modelling / Texturing
 									</li>
@@ -394,6 +407,15 @@
 											▪ Created holiday themed player avatar weapons and cosmetics.
 											<br>
 											▪ Retexturing for enemies that added holiday-themed variations.
+										</p>
+									</div>
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2communitymanagement" aria-expanded="false" aria-controls="deadfrontier2communitymanagement">
+										■  Community Management
+									</li>
+									<br>
+									<div class="collapse no-shadow" id="deadfrontier2communitymanagement">
+										<p>
+											Online community management and moderation for the game's wiki, forums, and Discord server with over 65,000 members. 
 										</p>
 									</div>
 									<br>
@@ -410,15 +432,16 @@
 			<div id="deadfrontier1" class="row">
 				<div class="col content-block-bg">
 					<div class="row content-block" style="background: linear-gradient(to bottom, rgba(37, 41, 48, 0.6), rgba(35, 39, 46, 0.3), rgba(26, 26, 26, 0.2)), url('http://dfbuddy.com/deadfrontier1_bg.png') no-repeat;">
-						<div class="col">
+						<div class="col-md-4">
 							<div class="white-text">
 								<a href="https://deadfrontier.com/" target="_blank">
 									<img src="http://dfbuddy.com/deadfrontier1_title.png" class="d-block w-80" alt="Dead Frontier 1">
 										<i class="fas fa-external-link-alt content-title-link-icon"></i>
 									</img>
 								</a>
-								<hr class="content-title-hr">
-								<i>Dead Frontier 1 is a survival action MMORPG.</i>
+								<br>
+								<!-- <hr class="content-title-hr">-->
+								<i class="project-description">Dead Frontier 1 is a survival horror shoot-em-up MMORPG. Explore a huge post-apocalyptic world and battle for survival against an army of infected zombies.</i>
 								<br><br><br>
 								<ul>
 									<b><h5>Primary Roles</h5></b>
@@ -428,7 +451,7 @@
 									<br>
 									<div class="collapse no-shadow" id="deadfrontier1gamedesign">
 										<p>
-											Designed multiple large-scale game expansions as well overhauled previous expansions. Area themes, all things weapons and armor, and new enemies. (Needs fleshed out)
+											Designed multiple large-scale game expansions as well overhauled previous expansions. This includes area themes/mechanics, all new weapons and armor, and new enemies with different behaviors and attacks.
 										</p>
 									</div>
 									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1gameplayprogramming" aria-expanded="false" aria-controls="deadfrontier1gameplayprogramming">
@@ -437,7 +460,7 @@
 									<br>
 									<div class="collapse no-shadow" id="deadfrontier1gameplayprogramming">
 										<p>
-											Programming for all things weapon or enemy related. (Needs fleshed out)
+											Programming for the player controller, player systems, weapon mechanics, infected zombie enemies, and human bandit enemies.
 										</p>
 									</div>
 									<br><br>
@@ -478,6 +501,15 @@
 											Created and textured low-poly 3D models for 20+ assets ranging from weapons to environment props.
 										</p>
 									</div>
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1communitymanagement" aria-expanded="false" aria-controls="deadfrontier1communitymanagement">
+										■  Community Management
+									</li>
+									<br>
+									<div class="collapse no-shadow" id="deadfrontier1communitymanagement">
+										<p>
+											Online community management and moderation for the game's wiki, forums, and Discord server with over 65,000 members. 
+										</p>
+									</div>
 									<br>
 								</ul>
 							</div>
@@ -492,15 +524,16 @@
 			<div id="marchoftheliving" class="row">
 				<div class="col content-block-bg">
 					<div class="row content-block" style="background: linear-gradient(to bottom, rgba(37, 41, 48, 0.6), rgba(35, 39, 46, 0.3), rgba(26, 26, 26, 0.2)), url('http://dfbuddy.com/marchoftheliving_bg.png') no-repeat;">
-						<div class="col">
+						<div class="col-md-4">
 							<div class="white-text">
 								<a href="https://store.steampowered.com/app/458000/March_of_the_Living/" target="_blank">
 									<img src="http://dfbuddy.com/marchoftheliving_title.png" class="d-block w-80" alt="March of the Living">
-										<i class="fas fa-external-link-alt content-title-link-icon"></i>
+										<i class="fas fa-external-link-alt content-title-link-icon" style="margin-right:25px;"></i>
 									</img>
 								</a>
-								<hr class="content-title-hr">
-								<i>March of the Living is a 2D tactical Rogue-like set in a zombie infested world. Manage and guide a group of survivors through random and scripted encounters to a rumored safe haven.</i>
+								<br>
+								<!-- <hr class="content-title-hr">-->
+								<i class="project-description">March of the Living is a 2D tactical Rogue-like set in a zombie infested world. Manage and guide a group of survivors through random and scripted encounters to a rumored safe haven.</i>
 								<br><br><br>
 								<ul>
 									<b><h5>Primary Roles</h5></b>
