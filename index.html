@@ -62,14 +62,14 @@
 			color:#8bbdea;
 			text-decoration: none;
 			border: none;
+			transition: margin-left 200ms ease-in-out;
 		}
 
 		.interactive:hover 
 		{
-			font-size: 1.02em;
+			margin-left:8px;
 			color:white;
 			text-decoration: underline;
-			border: #8bbdea;
 		}
 
 		.content-block 
@@ -189,6 +189,15 @@
 			border: 5px solid #292929;
 		}
 
+		#btn-back-to-top {
+			position: fixed;
+			bottom: 35px;
+			right: 35px;
+			display: none;
+			background-color:#8bbdea;
+			border:none;
+		}
+
 		@media only screen and (max-width: 600px) 
 		{
 			.content-block 
@@ -236,7 +245,15 @@
 </head>
 
 <body id="page-top" style="background-image: linear-gradient(#1a1a1a, #121212)">
+			<button
+		        type="button"
+		        class="btn btn-danger btn-floating btn-lg"
+		        id="btn-back-to-top"
+		        >
+		  <i class="fas fa-arrow-up"></i>
+		</button>
 	<div id="viewport">
+
 		<!-- Sidebar -->
 		<div id="sidebar" class="shadow">
 			<header>
@@ -274,7 +291,7 @@
 							</p> 
 						</h1>
 						<div>
-							<p>Hello! I'm Clayton Blough, a passionate game designer and gameplay programmer based in California, USA. <br><br>My passion for video games pushed me to start teaching myself game development over a decade ago. I now have half a decade of experience working on indie MMORPG titles. I love being able to design and develop interactive experiences that people can enjoy together. I take a lot of joy in coming up with ideas for new adventurous areas, formidable enemies, or inventive weapons and bringing them to life.<br><br>Got an interesting project? Send me a message at <a class="interactive shadow" href="mailto:claytonblough@outlook.com">claytonblough@outlook.com</a></p>
+							<p>Hello! I'm Clayton Blough, a passionate game designer and gameplay programmer based in California, USA. <br><br>My passion for video games pushed me to start teaching myself game development over a decade ago. I now have half a decade of experience working on indie MMORPG titles. I love coming up with ideas for new adventurous areas, formidable enemies, or inventive weapons and bringing them to life.<br><br>Got an interesting project? Send me a message at <a class="interactive shadow" href="mailto:claytonblough@outlook.com">claytonblough@outlook.com</a></p>
 						</div>
 					</div>
 					<div class="col">
@@ -349,15 +366,15 @@
 								<br><br>
 								<!-- <hr class="content-title-hr">-->
 								<i class="project-description no-shadow">Dead Frontier 2 is a survival horror MMORPG. As one of the few survivors of the outbreak, you must scratch a living out of the decaying ruins of society. Scavenge for supplies, improve your skills, and trade with other players. All the while, keeping your eyes peeled for the infected lurking around every corner.</i>
-								<br><br><br><br><br>
+								<br><br><br><br>
 								<ul>
-									<b><h5>Primary Roles </h5> <a class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="deadfrontier2gamedesign deadfrontier2gameplayprogramming"><i class="fas fa-expand-alt"></i>
-									</a></b>
+									<a class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target=".df2-collapse" aria-expanded="false" aria-controls="deadfrontier2gamedesign deadfrontier2gameplayprogramming deadfrontier2shaderprogramming deadfrontier2uidesign deadfrontier2developertools deadfrontier23dmodeling deadfrontier2communitymanagement deadfrontier2qatesting">View all <i class="fas fa-expand"></i></a><br><br>
+									<b><h5>Primary Roles </h5></b>
 									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2gamedesign" aria-expanded="false" aria-controls="deadfrontier2gamedesign">
 										■  Game Design
 									</li>
 									<br>
-									<div class="collapse multi-collapse no-shadow" id="deadfrontier2gamedesign">
+									<div class="df2-collapse collapse no-shadow" id="deadfrontier2gamedesign">
 										<p>
 											Designed a Halloween Jack-o'-lantern boss with themetic mechanics and attacks.
 										</p>
@@ -366,7 +383,7 @@
 										■  Gameplay Programming
 									</li>
 									<br>
-									<div class="collapse multi-collapse no-shadow" id="deadfrontier2gameplayprogramming">
+									<div class="df2-collapse collapse no-shadow" id="deadfrontier2gameplayprogramming">
 										<p>
 											Developed a system of holstering weapons to communicate and display secondary unused weapons to players.
 										</p>
@@ -377,7 +394,7 @@
 										■  Shader Programming
 									</li>
 									<br>
-									<div class="collapse no-shadow" id="deadfrontier2shaderprogramming">
+									<div class="df2-collapse collapse no-shadow" id="deadfrontier2shaderprogramming">
 										<p>
 											Created a shader that enabled in-game assets to be dyed any color without detail loss, utilizing a highly efficient masking approach. This had the added benefit of a 35% reduction in texture memory usage with the player avatar.
 										</p>
@@ -386,7 +403,7 @@
 										■  UI Design / Programming
 									</li>
 									<br>
-									<div class="collapse no-shadow" id="deadfrontier2uidesign">
+									<div class="df2-collapse collapse no-shadow" id="deadfrontier2uidesign">
 										<p>
 											▪ Converted player inventory from a list to an interactive drag-and-drop system.
 											<br>
@@ -394,10 +411,10 @@
 										</p>
 									</div>
 									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier2developertools" aria-expanded="false" aria-controls="deadfrontier2developertools">
-										■  Developer Tools
+										■   Developer Tools
 									</li>
 									<br>
-									<div class="collapse no-shadow" id="deadfrontier2developertools">
+									<div class="df2-collapse collapse no-shadow" id="deadfrontier2developertools">
 										<p>
 											Created a tool that automatically processes in-game 3D assets and renders them out to 2D UI icons with transparent backgrounds.
 										</p>
@@ -406,7 +423,7 @@
 										■  3D Modelling / Texturing
 									</li>
 									<br>
-									<div class="collapse no-shadow" id="deadfrontier23dmodeling">
+									<div class="df2-collapse collapse no-shadow" id="deadfrontier23dmodeling">
 										<p>
 											▪ Created holiday themed player avatar weapons and cosmetics.
 											<br>
@@ -417,7 +434,7 @@
 										■  Community Management
 									</li>
 									<br>
-									<div class="collapse no-shadow" id="deadfrontier2communitymanagement">
+									<div class="df2-collapse collapse multi-collapse no-shadow" id="deadfrontier2communitymanagement">
 										<p>
 											Online community management and moderation for the game's wiki, forums, and Discord server with over 65,000 members. 
 										</p>
@@ -426,7 +443,7 @@
 										■  QA Testing
 									</li>
 									<br>
-									<div class="collapse no-shadow" id="deadfrontier2qatesting">
+									<div class="df2-collapse collapse no-shadow" id="deadfrontier2qatesting">
 										<p>
 											Pre-release quality assurance testing. Attention to detail to help ensure the quality of the product. Wrote clear and concise steps to reproduce issues, feedback on balancing, and overall gameplay feel.
 										</p>
@@ -455,14 +472,15 @@
 								<br><br>
 								<!-- <hr class="content-title-hr">-->
 								<i class="project-description no-shadow">Dead Frontier 1 is a survival horror shoot-em-up MMORPG. Explore a huge post-apocalyptic world and battle for survival against an army of infected zombies.</i>
-								<br><br><br><br><br>
+								<br><br><br><br>
 								<ul>
+									<a class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target=".df1-collapse" aria-expanded="false" aria-controls="deadfrontier1gamedesign deadfrontier1gameplayprogramming deadfrontier1shaderprogramming deadfrontier1uidesign deadfrontier1optimization deadfrontier1developertools deadfrontier13dmodeling deadfrontier1communitymanagement">View all <i class="fas fa-expand"></i></a><br><br>
 									<b><h5>Primary Roles</h5></b>
 									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1gamedesign" aria-expanded="false" aria-controls="deadfrontier1gamedesign">
 										■  Game Design
 									</li>
 									<br>
-									<div class="collapse no-shadow" id="deadfrontier1gamedesign">
+									<div class="df1-collapse collapse no-shadow" id="deadfrontier1gamedesign">
 										<p>
 											Designed multiple large-scale game expansions as well overhauled previous expansions. This includes area themes/mechanics, all new weapons and armor, and new enemies with different behaviors and attacks.
 										</p>
@@ -471,7 +489,7 @@
 										■  Gameplay Programming
 									</li>
 									<br>
-									<div class="collapse no-shadow" id="deadfrontier1gameplayprogramming">
+									<div class="df1-collapse collapse no-shadow" id="deadfrontier1gameplayprogramming">
 										<p>
 											Programming for the player controller, player systems, weapon mechanics, infected zombie enemies, and human bandit enemies.
 										</p>
@@ -482,7 +500,7 @@
 										■  Shader Programming
 									</li>
 									<br>
-									<div class="collapse no-shadow" id="deadfrontier1shaderprogramming">
+									<div class="df1-collapse collapse no-shadow" id="deadfrontier1shaderprogramming">
 										<p>
 											Created a shader that allowed a majority of in-game cosmetics to be dyed any color, using a layering approach that compiled player clothing into a single texture.
 										</p>
@@ -491,16 +509,25 @@
 										■  System Optimization
 									</li>
 									<br>
-									<div class="collapse no-shadow" id="deadfrontier1optimization">
+									<div class="df1-collapse collapse no-shadow" id="deadfrontier1optimization">
 										<p>
 											Improved game performance and load times by over 50% by refactoring systems.
+										</p>
+									</div>
+									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1developertools" aria-expanded="false" aria-controls="deadfrontier1developertools">
+										■  Developer Tools
+									</li>
+									<br>
+									<div class="df1-collapse collapse no-shadow" id="deadfrontier1developertools">
+										<p>
+											Created tools for automating bone reference and assigning for human avatars, changing object layer types in mass, and changing rigidbody settings in mass.
 										</p>
 									</div>
 									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#deadfrontier1uidesign" aria-expanded="false" aria-controls="deadfrontier1uidesign">
 										■  2D Item Thumbnails
 									</li>
 									<br>
-									<div class="collapse no-shadow" id="deadfrontier1uidesign">
+									<div class="df1-collapse collapse no-shadow" id="deadfrontier1uidesign">
 										<p>
 											Digitally painted 100+ different item images ranging from weapons, armour sets, cosmetics, crafting components, and more for 2D male and female avatars.
 										</p>
@@ -509,7 +536,7 @@
 										■  3D Modelling / Texturing
 									</li>
 									<br>
-									<div class="collapse no-shadow" id="deadfrontier13dmodeling">
+									<div class="df1-collapse collapse no-shadow" id="deadfrontier13dmodeling">
 										<p>
 											Created and textured low-poly 3D models for 20+ assets ranging from weapons to environment props.
 										</p>
@@ -518,7 +545,7 @@
 										■  Community Management
 									</li>
 									<br>
-									<div class="collapse no-shadow" id="deadfrontier1communitymanagement">
+									<div class="df1-collapse collapse no-shadow" id="deadfrontier1communitymanagement">
 										<p>
 											Online community management and moderation for the game's wiki, forums, and Discord server with over 65,000 members. 
 										</p>
@@ -547,14 +574,15 @@
 								<br><br>
 								<!-- <hr class="content-title-hr">-->
 								<i class="project-description no-shadow">March of the Living is a 2D tactical Rogue-like set in a zombie infested world. Manage and guide a group of survivors through random and scripted encounters to a rumored safe haven.</i>
-								<br><br><br><br><br>
+								<br><br><br><br>
 								<ul>
+									<a class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target=".motl-collapse" aria-expanded="false" aria-controls="marchofthelivingencounterdesign marchofthelivingencounterwriting">View all <i class="fas fa-expand"></i></a><br><br>
 									<b><h5>Primary Roles</h5></b>
 									<li class="btn interactive" type="button" data-bs-toggle="collapse" data-bs-target="#marchofthelivingencounterdesign" aria-expanded="false" aria-controls="marchofthelivingencounterdesign">
 										■  Encounter Design
 									</li>
 									<br>
-									<div class="collapse no-shadow" id="marchofthelivingencounterdesign">
+									<div class="motl-collapse collapse no-shadow" id="marchofthelivingencounterdesign">
 										<p>
 											Designed random encounters with varying rewards or consequences influenced by the player's choices and character items.
 										</p>
@@ -563,7 +591,7 @@
 										■  Encounter Writing
 									</li>
 									<br>
-									<div class="collapse no-shadow" id="marchofthelivingencounterwriting">
+									<div class="motl-collapse collapse no-shadow" id="marchofthelivingencounterwriting">
 										<p>
 											Creative writing for 30 unique branching in-game scenarios.
 										</p>
@@ -590,7 +618,33 @@
 		</div>
 		<script src="https://kit.fontawesome.com/dccc160fa7.js"></script> 
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-		<!-- Footer -->
+       <script type="text/javascript">
+       	//Get the button
+		let mybutton = document.getElementById("btn-back-to-top");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () {
+		  scrollFunction();
+		};
+
+		function scrollFunction() {
+		  if (
+		    document.body.scrollTop > 20 ||
+		    document.documentElement.scrollTop > 20
+		  ) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		mybutton.addEventListener("click", backToTop);
+
+		function backToTop() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+       </script>
 	</div>
 </body>
 </html>
